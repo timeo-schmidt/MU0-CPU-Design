@@ -29,14 +29,14 @@ module cpu_decoder
 	assign LRL = OP[15]&~OP[14]&OP[13]&~OP[12];		// LRL 1010 A
 
 	
-	assign EXTRA = (LDA + ADD + SUB)&EXEC1;
-	assign MUX1 = (LDA + STA + ADD + SUB)&EXEC1;
-	assign MUX3 = (LDA + LDI)&EXEC1 + LDA&EXEC2;
-	assign SLOAD = (JMP + JMI + JEQ)&EXEC1; 
-	assign CNT_EN = (LDA + ADD + STA + LDI + SUB)&EXEC1;
+	assign EXTRA = (LDA | ADD | SUB)&EXEC1;
+	assign MUX1 = (LDA | STA | ADD | SUB)&EXEC1 | LDA&EXEC1;
+	assign MUX3 = (LDA | LDI)&EXEC1 | LDA&EXEC2;
+	assign SLOAD = (JMP | JMI | JEQ)&EXEC1; 
+	assign CNT_EN = (LDA | ADD | STA | LDI | SUB)&EXEC1;
 	assign WREN = STA&EXEC1;
-	assign SLOAD_ACC = (SUB + ADD  + LDI)&EXEC1 + LDA&EXEC2;
+	assign SLOAD_ACC = (SUB | ADD  | LDI)&EXEC1 | LDA&EXEC2;
 	assign add_sub = ADD&EXEC1;
 	assign shift_right = LRL&EXEC1;
-	assign enable_shift = LSL&EXEC1 + LRL&EXEC1;
+	assign enable_shift = LSL&EXEC1 | LRL&EXEC1;
 endmodule

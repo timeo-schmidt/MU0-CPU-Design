@@ -10,8 +10,9 @@ module cpu_statemachine
 	assign NS[2] = 0;
 	assign NS[1] = (~cs[2]&~cs[1]&cs[0]&extra);
 	assign NS[0] = (~cs[0]&~cs[1]&~cs[2]);
-	assign FETCH = ~NS[2]&~NS[1]&~NS[0];
-	assign EXEC1 = ~NS[2]&~NS[1]&NS[0];
-	assign EXEC2 = ~NS[2]&NS[1]&~NS[0];
+	
+	assign FETCH = ~cs[2]&~cs[1]&~cs[0];
+	assign EXEC1 = ~cs[2]&~cs[1]&cs[0];
+	assign EXEC2 = ~cs[2]&cs[1]&~cs[0];
 
 endmodule

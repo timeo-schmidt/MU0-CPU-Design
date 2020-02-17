@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 d/home/wz1119/nfshome/MU0CPUFINAL/simulation/qsim
 vMU0CPU
-Z1 !s110 1581951196
+Z1 !s110 1581955576
 !i10b 1
-!s100 0:U4<>g]NQnUc_NF5>MYD3
-I7Ig0FS;TX]SE2<]9fgT3H2
+!s100 0;Z>FGb8VPNQT2d`AUodz2
+IZ2DhjM=n`VVeS<6j@9b]W0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1581951195
+w1581955575
 8MU0CPUFINAL.vo
 FMU0CPUFINAL.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1581951196.000000
+Z4 !s108 1581955576.000000
 !s107 MU0CPUFINAL.vo|
 !s90 -work|work|MU0CPUFINAL.vo|
 !i113 1
@@ -33,21 +33,21 @@ n@m@u0@c@p@u
 vMU0CPU_vlg_vec_tst
 R1
 !i10b 1
-!s100 n8a3X^<:AHF`HacAEjh;T1
-IeDkDX[GYHfRA]?3CMn7km1
+!s100 3S[eOo=GI5R]V_WT<T;S50
+IhV8Jgl8CaHVLe3PRP=F6;3
 R2
 R0
-w1581951194
-8Waveform4.vwf.vt
-FWaveform4.vwf.vt
+w1581955574
+8Waveform10.vwf.vt
+FWaveform10.vwf.vt
 L0 29
 R3
 r1
 !s85 0
 31
 R4
-!s107 Waveform4.vwf.vt|
-!s90 -work|work|Waveform4.vwf.vt|
+!s107 Waveform10.vwf.vt|
+!s90 -work|work|Waveform10.vwf.vt|
 !i113 1
 R5
 R6
