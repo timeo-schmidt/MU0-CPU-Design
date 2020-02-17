@@ -1,0 +1,131 @@
+Flow report for MU0CPUFINAL
+Mon Feb 17 14:53:15 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Mon Feb 17 14:53:15 2020           ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                   ; MU0CPUFINAL                                     ;
+; Top-level Entity Name           ; MU0CPU                                          ;
+; Family                          ; Cyclone V                                       ;
+; Device                          ; 5CGXFC7C7F23C8                                  ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; N/A                                             ;
+; Total registers                 ; 41                                              ;
+; Total pins                      ; 29                                              ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 65,536                                          ;
+; Total DSP Blocks                ; 0                                               ;
+; Total HSSI RX PCSs              ; 0                                               ;
+; Total HSSI PMA RX Deserializers ; 0                                               ;
+; Total HSSI TX PCSs              ; 0                                               ;
+; Total HSSI PMA TX Serializers   ; 0                                               ;
+; Total PLLs                      ; 0                                               ;
+; Total DLLs                      ; 0                                               ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 02/17/2020 14:51:06 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; MU0CPUFINAL         ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 22095314655756.158195106616854         ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MISC_FILE                           ; ram.bsf                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; ram_inst.v                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; ram_bb.v                               ; --            ; --          ; --             ;
+; MISC_FILE                           ; ram.inc                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; ram.cmp                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; constant.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; constant_bb.v                          ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; MU0CPU      ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; MU0CPU      ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; MU0CPU      ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; MU0CPU                                 ; MU0CPUFINAL   ; --          ; --             ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 1207 MB             ; 00:00:28                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1231 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 1238 MB             ; 00:00:01                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:30                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                                ;
++----------------------+----------------------+----------------+----------------+----------------+
+; Module Name          ; Machine Hostname     ; OS Name        ; OS Version     ; Processor type ;
++----------------------+----------------------+----------------+----------------+----------------+
+; Analysis & Synthesis ; ee-mill2.ee.ic.ac.uk ; CentOS release ; CentOS release ; x86_64         ;
+; EDA Netlist Writer   ; ee-mill2.ee.ic.ac.uk ; CentOS release ; CentOS release ; x86_64         ;
+; EDA Netlist Writer   ; ee-mill2.ee.ic.ac.uk ; CentOS release ; CentOS release ; x86_64         ;
++----------------------+----------------------+----------------+----------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off MU0CPUFINAL -c MU0CPUFINAL
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off MU0CPUFINAL -c MU0CPUFINAL --vector_source=/home/wz1119/nfshome/MU0CPUFINAL/Waveform4.vwf --testbench_file=/home/wz1119/nfshome/MU0CPUFINAL/simulation/qsim/Waveform4.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/wz1119/nfshome/MU0CPUFINAL/simulation/qsim/ MU0CPUFINAL -c MU0CPUFINAL
+
+
+

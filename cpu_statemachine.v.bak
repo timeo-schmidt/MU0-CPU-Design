@@ -1,0 +1,15 @@
+module cpu_statemachine
+(
+	input[2:0] cs,
+	input extra,
+	input rst,
+	output[2:0] next_state
+);
+
+	
+	
+	assign next_state[2] = 0;
+	assign next_state[1] = (~cs[2]&~cs[1]&cs[0]&extra)&~rst;
+	assign next_state[0] = (~cs[0]&~cs[1]&~cs[2])&~rst;
+
+endmodule

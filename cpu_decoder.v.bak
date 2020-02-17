@@ -1,0 +1,34 @@
+module cpu_decoder
+(
+	input FETCH,
+	input EXEC1.
+	input EXEC2,
+	input [15:12] OP,
+	output EXTRA,
+	output MUX1,
+	output MUX3,
+	output SLOAD,
+	output CNT_EN,
+	output WREN
+	wire LDA, STA, ADD, SUB, JMP, JMI, JEQ, STP, LDI
+);
+
+	assign LDA = ~OP[15]&~OP[14]&~OP[13]&~OP[12];
+	assign STA = ~OP[15]&~OP[14]&~OP[13]&OP[12];
+	assign ADD = ~OP[15]&~OP[14]&OP[13]&~OP[12];
+	assign SUB = ~OP[15]&~OP[14]&OP[13]&OP[12];
+	assign JMP = ~OP[15]&OP[14]&~OP[13]&~OP[12];
+	assign JMI = ~OP[15]&OP[14]&~OP[13]&OP[12];
+	assign JEQ = ~OP[15]&OP[14]&OP[13]&~OP[12];
+	assign STP = ~OP[15]&OP[14]&OP[13]&OP[12];
+	assign LDI = OP[15]&~OP[14]&~OP[13]&~OP[12];
+
+	assign EXTRA =
+	assign MUX1 = ;
+	assign MUX3 = ~IR[15]&~IR[14]&~IR[13]&~IR[12]&EXEC1;
+	assign ALU_ADD_SUB = ; 
+	assign SLOAD = ; 
+	assign CNT_EN = ~IR[15]&~IR[14]&~IR[13]&~IR[12]&EXEC1;
+	assign WREN = ;
+
+endmodule
