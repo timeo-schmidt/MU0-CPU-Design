@@ -8,47 +8,111 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/wz1119/nfshome/MU0CPUFINAL/simulation/qsim
-vMU0CPU
-Z1 !s110 1581955576
+v\statemachine-isolated-test 
+!s110 1582553600
 !i10b 1
-!s100 0;Z>FGb8VPNQT2d`AUodz2
-IZ2DhjM=n`VVeS<6j@9b]W0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 8UN0MAXfkBTgzZz3VlW7H0
+I=@S2SJ3?n;=<Z?B@i;8=R2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1581955575
-8MU0CPUFINAL.vo
-FMU0CPUFINAL.vo
-L0 31
-Z3 OV;L;10.5b;63
+w1582553599
+Z2 8MU0CPUFINAL.vo
+Z3 FMU0CPUFINAL.vo
+Z4 L0 31
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1581955576.000000
-!s107 MU0CPUFINAL.vo|
-!s90 -work|work|MU0CPUFINAL.vo|
+!s108 1582553600.000000
+Z6 !s107 MU0CPUFINAL.vo|
+Z7 !s90 -work|work|MU0CPUFINAL.vo|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z8 o-work work
+Z9 tCvgOpt 0
+n@134statemachine-isolated-test@040
+vMU0CPU
+Z10 !s110 1582557443
+!i10b 1
+!s100 @ke7n>gH89JD3:mCSmZHc2
+IQA<8<dg:9Kj6I`TR@WM<Q0
+R1
+R0
+w1582557442
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1582557443.000000
+R6
+R7
+!i113 1
+R8
+R9
 n@m@u0@c@p@u
 vMU0CPU_vlg_vec_tst
-R1
+R10
 !i10b 1
-!s100 3S[eOo=GI5R]V_WT<T;S50
-IhV8Jgl8CaHVLe3PRP=F6;3
-R2
+!s100 @P7TO9l5Ym@W4[ZSFdl3L1
+IEiY`a7V70`mmm5h4^`ATA3
+R1
 R0
-w1581955574
-8Waveform10.vwf.vt
-FWaveform10.vwf.vt
-L0 29
-R3
+w1582557441
+8Waveform20.vwf.vt
+FWaveform20.vwf.vt
+Z12 L0 29
+R5
 r1
 !s85 0
 31
-R4
-!s107 Waveform10.vwf.vt|
-!s90 -work|work|Waveform10.vwf.vt|
+R11
+!s107 Waveform20.vwf.vt|
+!s90 -work|work|Waveform20.vwf.vt|
 !i113 1
-R5
-R6
+R8
+R9
 n@m@u0@c@p@u_vlg_vec_tst
+vstatemachineisolatedtest
+Z13 !s110 1582554865
+!i10b 1
+!s100 3[4YYLcFTEWTl1ajHVZAY1
+InggE`h<g^]6Q1?ih4dCk^2
+R1
+R0
+w1582554864
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z14 !s108 1582554865.000000
+R6
+R7
+!i113 1
+R8
+R9
+vstatemachineisolatedtest_vlg_vec_tst
+R13
+!i10b 1
+!s100 dce=8b=aid?h_i5b8NV^b3
+IciKUb2Q<^m;ZMf1Yc5?8z3
+R1
+R0
+w1582554862
+8Waveform16.vwf.vt
+FWaveform16.vwf.vt
+R12
+R5
+r1
+!s85 0
+31
+R14
+!s107 Waveform16.vwf.vt|
+!s90 -work|work|Waveform16.vwf.vt|
+!i113 1
+R8
+R9

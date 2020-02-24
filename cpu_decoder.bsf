@@ -110,8 +110,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 208 160)
 		(output)
-		(text "enable_shift" (rect 0 0 47 12)(font "Arial" ))
-		(text "enable_shift" (rect 140 155 187 167)(font "Arial" ))
+		(text "enable_acc" (rect 0 0 44 12)(font "Arial" ))
+		(text "enable_acc" (rect 143 155 187 167)(font "Arial" ))
 		(line (pt 208 160)(pt 192 160)(line_width 1))
 	)
 	(port

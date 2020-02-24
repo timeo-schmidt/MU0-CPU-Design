@@ -69,23 +69,6 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect -16 -216 0 -40)
-	(text "OUTPUT" (rect 0 135 10 175)(font "Arial" (font_size 6))(vertical))
-	(text "accout[15..0]" (rect 0 5 11 68)(font "Arial" )(vertical))
-	(pt 8 176)
-	(drawing
-		(line (pt 8 176)(pt 8 124))
-		(line (pt 4 124)(pt 4 98))
-		(line (pt 12 124)(pt 12 98))
-		(line (pt 12 124)(pt 4 124))
-		(line (pt 4 98)(pt 8 94))
-		(line (pt 8 94)(pt 12 98))
-		(line (pt 12 98)(pt 8 94))
-	)
-	(rotate90)
-)
-(pin
-	(output)
 	(rect 80 280 258 296)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "MERGED[15..0]" (rect 90 0 172 11)(font "Arial" ))
@@ -104,7 +87,7 @@ refer to the applicable agreement for further details.
 	(output)
 	(rect 392 -200 568 -184)
 	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "STATE[2..0]" (rect 5 5 67 16)(font "Arial" ))
+	(text "STATE[2..0]" (rect 5 5 66 16)(font "Arial" ))
 	(pt 176 8)
 	(drawing
 		(line (pt 176 8)(pt 124 8))
@@ -138,6 +121,86 @@ refer to the applicable agreement for further details.
 	(rect 840 -272 1016 -256)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "exec2" (rect 90 0 117 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -64 -64 134 -48)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "OUTPUT_ACC[15..0]" (rect 90 0 192 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 856 -344 1032 -328)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "fetch" (rect 90 0 114 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 64 440 250 456)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "beforemux3[15..0]" (rect 90 0 180 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1120 -456 1296 -440)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "address[11..0]" (rect 90 0 159 11)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1360 -384 1536 -368)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "sel_busmux" (rect 90 0 151 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -820,7 +883,7 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect -344 -224 -105 -149))
 )
 (symbol
-	(rect 1048 24 1176 240)
+	(rect 1048 32 1176 248)
 	(text "ram" (rect 112 97 128 124)(font "Arial" (font_size 10))(vertical))
 	(text "ram" (rect 4 8 15 29)(font "Arial" )(vertical))
 	(port
@@ -905,35 +968,6 @@ refer to the applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 632 -272 768 -176)
-	(text "3_bit_register" (rect 5 0 91 15)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 79 29 92)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "a[2..0]" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
-		(text "a[2..0]" (rect 21 27 59 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
-		(text "CLK" (rect 21 43 44 58)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 136 32)
-		(output)
-		(text "b[2..0]" (rect 0 0 40 15)(font "Intel Clear" (font_size 8)))
-		(text "b[2..0]" (rect 75 27 115 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 136 32)(pt 120 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 120 80))
-	)
-)
-(symbol
 	(rect 80 368 192 416)
 	(text "constant" (rect 20 32 81 48)(font "Arial" (font_size 10)))
 	(text "inst5" (rect 80 4 104 15)(font "Arial" ))
@@ -963,9 +997,88 @@ refer to the applicable agreement for further details.
 	(rotate180)
 )
 (symbol
+	(rect 456 -320 624 -208)
+	(text "cpu_statemachine" (rect 5 0 97 11)(font "Arial" ))
+	(text "inst10" (rect 8 96 38 107)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "cs[2..0]" (rect 0 0 36 11)(font "Arial" ))
+		(text "cs[2..0]" (rect 21 27 57 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "extra" (rect 0 0 25 11)(font "Arial" ))
+		(text "extra" (rect 21 43 46 54)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "EXEC1" (rect 0 0 36 11)(font "Arial" ))
+		(text "EXEC1" (rect 117 27 147 38)(font "Arial" ))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "EXEC2" (rect 0 0 37 11)(font "Arial" ))
+		(text "EXEC2" (rect 116 43 147 54)(font "Arial" ))
+		(line (pt 168 48)(pt 152 48))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "FETCH" (rect 0 0 36 11)(font "Arial" ))
+		(text "FETCH" (rect 117 59 147 70)(font "Arial" ))
+		(line (pt 168 64)(pt 152 64))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "NS[2..0]" (rect 0 0 42 11)(font "Arial" ))
+		(text "NS[2..0]" (rect 112 75 147 86)(font "Arial" ))
+		(line (pt 168 80)(pt 152 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 96))
+	)
+)
+(symbol
+	(rect 632 -272 768 -176)
+	(text "3_bit_register" (rect 5 0 91 15)(font "Intel Clear" (font_size 8)))
+	(text "register3" (rect 8 79 52 92)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "a[2..0]" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
+		(text "a[2..0]" (rect 21 27 59 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 21 43 44 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 136 32)
+		(output)
+		(text "b[2..0]" (rect 0 0 40 15)(font "Intel Clear" (font_size 8)))
+		(text "b[2..0]" (rect 75 27 115 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 136 32)(pt 120 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 120 80))
+	)
+)
+(symbol
 	(rect 856 -272 1064 -64)
 	(text "cpu_decoder" (rect 5 0 67 11)(font "Arial" ))
-	(text "inst2" (rect 8 192 33 203)(font "Arial" ))
+	(text "decoder" (rect 8 192 46 203)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -1053,8 +1166,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 208 160)
 		(output)
-		(text "enable_shift" (rect 0 0 62 11)(font "Arial" ))
-		(text "enable_shift" (rect 135 155 187 166)(font "Arial" ))
+		(text "enable_acc" (rect 0 0 56 11)(font "Arial" ))
+		(text "enable_acc" (rect 140 155 187 166)(font "Arial" ))
 		(line (pt 208 160)(pt 192 160))
 	)
 	(port
@@ -1066,56 +1179,6 @@ refer to the applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 192 192))
-	)
-)
-(symbol
-	(rect 456 -320 624 -208)
-	(text "cpu_statemachine" (rect 5 0 97 11)(font "Arial" ))
-	(text "inst3" (rect 8 96 32 107)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "cs[2..0]" (rect 0 0 36 11)(font "Arial" ))
-		(text "cs[2..0]" (rect 21 27 57 38)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "extra" (rect 0 0 25 11)(font "Arial" ))
-		(text "extra" (rect 21 43 46 54)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 168 32)
-		(output)
-		(text "EXEC1" (rect 0 0 36 11)(font "Arial" ))
-		(text "EXEC1" (rect 117 27 147 38)(font "Arial" ))
-		(line (pt 168 32)(pt 152 32))
-	)
-	(port
-		(pt 168 48)
-		(output)
-		(text "EXEC2" (rect 0 0 37 11)(font "Arial" ))
-		(text "EXEC2" (rect 116 43 147 54)(font "Arial" ))
-		(line (pt 168 48)(pt 152 48))
-	)
-	(port
-		(pt 168 64)
-		(output)
-		(text "FETCH" (rect 0 0 36 11)(font "Arial" ))
-		(text "FETCH" (rect 117 59 147 70)(font "Arial" ))
-		(line (pt 168 64)(pt 152 64))
-	)
-	(port
-		(pt 168 80)
-		(output)
-		(text "NS[2..0]" (rect 0 0 42 11)(font "Arial" ))
-		(text "NS[2..0]" (rect 112 75 147 86)(font "Arial" ))
-		(line (pt 168 80)(pt 152 80)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 152 96))
 	)
 )
 (connector
@@ -1146,16 +1209,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 832 -424)
 	(pt 832 -432)
-	(bus)
-)
-(connector
-	(pt 1112 -440)
-	(pt 1120 -440)
-	(bus)
-)
-(connector
-	(pt 1112 24)
-	(pt 1112 -440)
 	(bus)
 )
 (connector
@@ -1241,14 +1294,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 632 -224)
-	(pt 632 8)
-)
-(connector
-	(pt 264 8)
-	(pt 264 -440)
-)
-(connector
 	(pt 1088 -360)
 	(pt 440 -360)
 )
@@ -1317,28 +1362,6 @@ refer to the applicable agreement for further details.
 	(pt 608 296)
 )
 (connector
-	(pt 1064 8)
-	(pt 1064 24)
-)
-(connector
-	(pt 264 8)
-	(pt 632 8)
-)
-(connector
-	(pt 632 8)
-	(pt 1064 8)
-)
-(connector
-	(pt 1144 240)
-	(pt 1144 480)
-	(bus)
-)
-(connector
-	(pt 1144 480)
-	(pt 1144 488)
-	(bus)
-)
-(connector
 	(pt 1144 480)
 	(pt 1216 480)
 	(bus)
@@ -1360,16 +1383,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -56 96)
-	(pt -56 192)
-	(bus)
-)
-(connector
-	(pt 1144 -40)
-	(pt 1144 24)
-	(bus)
-)
-(connector
 	(pt -160 336)
 	(pt -160 312)
 	(bus)
@@ -1382,11 +1395,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt -72 312)
 	(pt -72 304)
-	(bus)
-)
-(connector
-	(pt -304 -40)
-	(pt -304 512)
 	(bus)
 )
 (connector
@@ -1558,10 +1566,6 @@ refer to the applicable agreement for further details.
 	(pt 1240 -176)
 )
 (connector
-	(pt 1128 24)
-	(pt 1128 -160)
-)
-(connector
 	(pt 1376 256)
 	(pt 1376 -208)
 )
@@ -1586,18 +1590,8 @@ refer to the applicable agreement for further details.
 	(pt 1064 -96)
 )
 (connector
-	(text "k[15..12]" (rect 840 -39 853 4)(font "Intel Clear" )(vertical))
-	(pt 856 0)
-	(pt 856 -192)
-	(bus)
-)
-(connector
 	(pt 848 -256)
 	(pt 848 -240)
-)
-(connector
-	(pt 624 -256)
-	(pt 848 -256)
 )
 (connector
 	(pt 848 -240)
@@ -1646,10 +1640,6 @@ refer to the applicable agreement for further details.
 	(pt 1240 -176)
 )
 (connector
-	(pt 1064 -160)
-	(pt 1128 -160)
-)
-(connector
 	(pt 1064 -144)
 	(pt 1088 -144)
 )
@@ -1670,10 +1660,6 @@ refer to the applicable agreement for further details.
 	(pt 856 -208)
 )
 (connector
-	(pt 1104 -408)
-	(pt 1104 -224)
-)
-(connector
 	(pt 1008 -408)
 	(pt 1104 -408)
 )
@@ -1682,38 +1668,178 @@ refer to the applicable agreement for further details.
 	(pt 1064 -224)
 )
 (connector
-	(pt -304 -40)
-	(pt -64 -40)
-	(bus)
-)
-(connector
-	(pt -64 -40)
-	(pt -8 -40)
-	(bus)
-)
-(connector
-	(pt -8 -40)
-	(pt 1144 -40)
-	(bus)
-)
-(connector
-	(pt 624 -240)
-	(pt 624 -192)
-	(bus)
-)
-(connector
 	(pt 624 -192)
 	(pt 568 -192)
 	(bus)
 )
 (connector
-	(pt -40 352)
+	(pt 840 -272)
+	(pt 840 -264)
+)
+(connector
+	(pt 840 -264)
+	(pt 840 -208)
+)
+(connector
+	(text "k[15..12]" (rect 840 -39 853 4)(font "Intel Clear" )(vertical))
+	(pt 856 -192)
+	(pt 856 0)
+	(bus)
+)
+(connector
+	(pt -24 -40)
+	(pt -24 -72)
+	(bus)
+)
+(connector
+	(pt -304 -72)
+	(pt -304 512)
+	(bus)
+)
+(connector
+	(pt -24 -72)
+	(pt -64 -72)
+	(bus)
+)
+(connector
+	(pt -64 -56)
+	(pt -64 -72)
+	(bus)
+)
+(connector
+	(text "h[15..0]" (rect -302 -88 -266 -75)(font "Intel Clear" ))
+	(pt -64 -72)
+	(pt -304 -72)
+	(bus)
+)
+(connector
+	(text "h[15..0]" (rect -80 -73 -67 -37)(font "Intel Clear" )(vertical))
+	(pt -64 -40)
+	(pt -64 -56)
+	(bus)
+)
+(connector
+	(pt 808 -256)
+	(pt 808 -336)
+)
+(connector
+	(pt 808 -336)
+	(pt 856 -336)
+)
+(connector
+	(pt 624 -256)
+	(pt 808 -256)
+)
+(connector
+	(pt 808 -256)
+	(pt 848 -256)
+)
+(connector
+	(pt 1120 -440)
+	(pt 1112 -440)
+	(bus)
+)
+(connector
+	(pt 1064 -160)
+	(pt 1128 -160)
+)
+(connector
+	(text "h[15..0]" (rect -22 -56 14 -43)(font "Intel Clear" ))
+	(pt -24 -40)
+	(pt 1144 -40)
+	(bus)
+)
+(connector
+	(pt 1144 248)
+	(pt 1144 480)
+	(bus)
+)
+(connector
+	(pt 1144 480)
+	(pt 1144 488)
+	(bus)
+)
+(connector
+	(pt 1144 -40)
+	(pt 1144 32)
+	(bus)
+)
+(connector
+	(pt 1128 -160)
+	(pt 1128 32)
+)
+(connector
+	(pt 1112 -440)
+	(pt 1112 32)
+	(bus)
+)
+(connector
+	(pt 1064 8)
+	(pt 1064 32)
+)
+(connector
+	(pt 624 -192)
+	(pt 624 -240)
+	(bus)
+)
+(connector
+	(pt 264 8)
+	(pt 1064 8)
+)
+(connector
+	(pt 632 -224)
+	(pt 632 -120)
+)
+(connector
+	(pt 632 -120)
+	(pt 264 -120)
+)
+(connector
+	(pt 264 8)
+	(pt 264 -120)
+)
+(connector
+	(pt 264 -120)
+	(pt 264 -440)
+)
+(connector
+	(pt -120 288)
+	(pt 80 288)
+	(bus)
+)
+(connector
+	(pt -120 160)
+	(pt -120 288)
+	(bus)
+)
+(connector
+	(pt -56 160)
+	(pt -120 160)
+	(bus)
+)
+(connector
+	(pt -56 96)
+	(pt -56 160)
+	(bus)
+)
+(connector
+	(pt -56 160)
+	(pt -56 192)
+	(bus)
+)
+(connector
+	(pt 64 448)
+	(pt 24 448)
+	(bus)
+)
+(connector
+	(pt 24 448)
 	(pt 24 352)
 	(bus)
 )
 (connector
 	(pt 24 352)
-	(pt 24 288)
+	(pt -40 352)
 	(bus)
 )
 (connector
@@ -1728,18 +1854,16 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS152>>" (rect 32 272 154 285)(font "Intel Clear" )(invisible))
-	(pt 24 288)
-	(pt 80 288)
-	(bus)
+	(pt 1104 -408)
+	(pt 1104 -376)
 )
 (connector
-	(pt 840 -272)
-	(pt 840 -264)
+	(pt 1104 -376)
+	(pt 1104 -224)
 )
 (connector
-	(pt 840 -264)
-	(pt 840 -208)
+	(pt 1104 -376)
+	(pt 1360 -376)
 )
 (junction (pt 512 312))
 (junction (pt 264 328))
@@ -1747,17 +1871,20 @@ refer to the applicable agreement for further details.
 (junction (pt 824 -64))
 (junction (pt 264 8))
 (junction (pt 800 40))
-(junction (pt 632 8))
 (junction (pt 1144 480))
 (junction (pt 696 -472))
 (junction (pt 320 488))
-(junction (pt -64 -40))
 (junction (pt -40 488))
 (junction (pt -40 392))
 (junction (pt 264 128))
 (junction (pt 1272 568))
 (junction (pt 800 -224))
-(junction (pt -8 -40))
-(junction (pt 624 -240))
-(junction (pt -40 352))
 (junction (pt 840 -264))
+(junction (pt -64 -72))
+(junction (pt -64 -56))
+(junction (pt 808 -256))
+(junction (pt 624 -240))
+(junction (pt 264 -120))
+(junction (pt -56 160))
+(junction (pt -40 352))
+(junction (pt 1104 -376))

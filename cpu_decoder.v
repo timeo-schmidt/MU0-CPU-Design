@@ -12,7 +12,7 @@ module cpu_decoder
 	output WREN,
 	output SLOAD_ACC,
 	output shift_right,
-	output enable_shift,
+	output enable_acc,
 	output add_sub
 );
 	wire LDA, STA, ADD, SUB, JMP, JMI, JEQ, STP, LDI, LSL, LSR;
@@ -26,17 +26,17 @@ module cpu_decoder
 	assign STP = ~OP[15]&OP[14]&OP[13]&OP[12];		// STP 0111 7
 	assign LDI = OP[15]&~OP[14]&~OP[13]&~OP[12];		// LDI 1000 8 
 	assign LSL = OP[15]&~OP[14]&~OP[13]&OP[12];		// LSL 1001 9
-	assign LRL = OP[15]&~OP[14]&OP[13]&~OP[12];		// LRL 1010 A
+	assign LSR = OP[15]&~OP[14]&OP[13]&~OP[12];		// LSR 1010 A
 
 	
-	assign EXTRA = (LDA | ADD | SUB)&EXEC1;
+	assign EXTRA = (LDA | ADD | SUB);
 	assign MUX1 = (LDA | STA | ADD | SUB)&EXEC1 | LDA&EXEC1;
-	assign MUX3 = (LDA | LDI)&EXEC1 | LDA&EXEC2;
+	assign MUX3 = LDA | LDI ;
 	assign SLOAD = (JMP | JMI | JEQ)&EXEC1; 
-	assign CNT_EN = (LDA | ADD | STA | LDI | SUB)&EXEC1;
+	assign CNT_EN = (LDA | ADD  | SUB)&EXEC2 |LDI | STA ;
 	assign WREN = STA&EXEC1;
-	assign SLOAD_ACC = (SUB | ADD  | LDI)&EXEC1 | LDA&EXEC2;
-	assign add_sub = ADD&EXEC1;
-	assign shift_right = LRL&EXEC1;
-	assign enable_shift = LSL&EXEC1 | LRL&EXEC1;
+	assign SLOAD_ACC = (LDI)&EXEC1|(SUB|ADD|LDA)&EXEC2;
+	assign add_sub = ADD;
+	assign shift_right = LSR&EXEC1;
+	assign enable_acc = (LDI)&EXEC1|(SUB|ADD|LDA)&EXEC2|(LSL|LSR)&EXEC1;
 endmodule
