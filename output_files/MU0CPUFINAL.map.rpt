@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MU0CPUFINAL
-Mon Feb 24 15:16:48 2020
+Mon Feb 24 16:46:50 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -18,20 +18,21 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Source assignments for ram:ram|altsyncram:altsyncram_component|altsyncram_skp1:auto_generated
- 13. Parameter Settings for User Entity Instance: BUSMUX:MUX
- 14. Parameter Settings for User Entity Instance: LPM_FF:IR
- 15. Parameter Settings for User Entity Instance: ram:ram|altsyncram:altsyncram_component
- 16. Parameter Settings for User Entity Instance: BUSMUX:MUX1
- 17. Parameter Settings for User Entity Instance: LPM_COUNTER:inst4
- 18. Parameter Settings for User Entity Instance: LPM_SHIFTREG:ACC
- 19. Parameter Settings for User Entity Instance: BUSMUX:MUX3
- 20. Parameter Settings for User Entity Instance: LPM_ADD_SUB:ALU
+ 13. Parameter Settings for User Entity Instance: LPM_SHIFTREG:ACC
+ 14. Parameter Settings for User Entity Instance: BUSMUX:MUX3
+ 15. Parameter Settings for User Entity Instance: LPM_ADD_SUB:ALU
+ 16. Parameter Settings for User Entity Instance: ram:ram|altsyncram:altsyncram_component
+ 17. Parameter Settings for User Entity Instance: BUSMUX:MUX1
+ 18. Parameter Settings for User Entity Instance: LPM_COUNTER:inst4
+ 19. Parameter Settings for User Entity Instance: BUSMUX:MUX
+ 20. Parameter Settings for User Entity Instance: LPM_FF:IR
  21. Parameter Settings for User Entity Instance: constant:inst5|lpm_constant:LPM_CONSTANT_component
- 22. altsyncram Parameter Settings by Entity Instance
+ 22. Parameter Settings for User Entity Instance: LPM_SHIFTREG:ACC3
  23. lpm_shiftreg Parameter Settings by Entity Instance
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+ 24. altsyncram Parameter Settings by Entity Instance
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -57,14 +58,14 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Feb 24 15:16:48 2020           ;
+; Analysis & Synthesis Status     ; Successful - Mon Feb 24 16:46:49 2020           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; MU0CPUFINAL                                     ;
 ; Top-level Entity Name           ; MU0CPU                                          ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
 ; Total registers                 ; 46                                              ;
-; Total pins                      ; 96                                              ;
+; Total pins                      ; 93                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 65,536                                          ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -193,16 +194,22 @@ refer to the applicable agreement for further details.
 ; cpu_decoder.v                    ; yes             ; User Verilog HDL File                  ; /home/wz1119/nfshome/MU0CPUFINAL/cpu_decoder.v                                 ;         ;
 ; 3_bit_register.bdf               ; yes             ; User Block Diagram/Schematic File      ; /home/wz1119/nfshome/MU0CPUFINAL/3_bit_register.bdf                            ;         ;
 ; constant.v                       ; yes             ; User Wizard-Generated File             ; /home/wz1119/nfshome/MU0CPUFINAL/constant.v                                    ;         ;
+; lpm_shiftreg.tdf                 ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf        ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/aglobal181.inc          ;         ;
 ; busmux.tdf                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/busmux.tdf              ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_mux.tdf             ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/aglobal181.inc          ;         ;
 ; muxlut.inc                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/muxlut.inc              ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/bypassff.inc            ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/altshift.inc            ;         ;
 ; db/mux_flc.tdf                   ; yes             ; Auto-Generated Megafunction            ; /home/wz1119/nfshome/MU0CPUFINAL/db/mux_flc.tdf                                ;         ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_ff.tdf              ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                      ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                     ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; alt_stratix_add_sub.inc          ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; db/add_sub_i1b.tdf               ; yes             ; Auto-Generated Megafunction            ; /home/wz1119/nfshome/MU0CPUFINAL/db/add_sub_i1b.tdf                            ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc   ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
@@ -218,15 +225,9 @@ refer to the applicable agreement for further details.
 ; cmpconst.inc                     ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
 ; lpm_compare.inc                  ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
 ; lpm_counter.inc                  ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
 ; alt_counter_stratix.inc          ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
 ; db/cntr_0gh.tdf                  ; yes             ; Auto-Generated Megafunction            ; /home/wz1119/nfshome/MU0CPUFINAL/db/cntr_0gh.tdf                               ;         ;
-; lpm_shiftreg.tdf                 ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf        ;         ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
-; addcore.inc                      ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/addcore.inc             ;         ;
-; look_add.inc                     ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/look_add.inc            ;         ;
-; alt_stratix_add_sub.inc          ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
-; db/add_sub_i1b.tdf               ; yes             ; Auto-Generated Megafunction            ; /home/wz1119/nfshome/MU0CPUFINAL/db/add_sub_i1b.tdf                            ;         ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_ff.tdf              ;         ;
 ; lpm_constant.tdf                 ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_constant.tdf        ;         ;
 +----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------+---------+
 
@@ -236,18 +237,18 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 61        ;
+; Estimate of Logic utilization (ALMs needed) ; 56        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 88        ;
+; Combinational ALUT usage for logic          ; 93        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 3         ;
-;     -- 5 input functions                    ; 16        ;
-;     -- 4 input functions                    ; 17        ;
-;     -- <=3 input functions                  ; 52        ;
+;     -- 6 input functions                    ; 2         ;
+;     -- 5 input functions                    ; 6         ;
+;     -- 4 input functions                    ; 18        ;
+;     -- <=3 input functions                  ; 67        ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 46        ;
 ;                                             ;           ;
-; I/O pins                                    ; 96        ;
+; I/O pins                                    ; 93        ;
 ; Total MLAB memory bits                      ; 0         ;
 ; Total block memory bits                     ; 65536     ;
 ;                                             ;           ;
@@ -255,8 +256,8 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 62        ;
-; Total fan-out                               ; 936       ;
-; Average fan-out                             ; 2.74      ;
+; Total fan-out                               ; 923       ;
+; Average fan-out                             ; 2.71      ;
 +---------------------------------------------+-----------+
 
 
@@ -265,7 +266,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Entity Name      ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+------------------+--------------+
-; |MU0CPU                                   ; 88 (0)              ; 46 (0)                    ; 65536             ; 0          ; 96   ; 0            ; |MU0CPU                                                                        ; MU0CPU           ; work         ;
+; |MU0CPU                                   ; 93 (0)              ; 46 (0)                    ; 65536             ; 0          ; 93   ; 0            ; |MU0CPU                                                                        ; MU0CPU           ; work         ;
 ;    |3_bit_register:register3|             ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|3_bit_register:register3                                               ; 3_bit_register   ; work         ;
 ;    |busmux:MUX1|                          ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX1                                                            ; busmux           ; work         ;
 ;       |lpm_mux:$00000|                    ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX1|lpm_mux:$00000                                             ; lpm_mux          ; work         ;
@@ -273,11 +274,11 @@ refer to the applicable agreement for further details.
 ;    |busmux:MUX3|                          ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX3                                                            ; busmux           ; work         ;
 ;       |lpm_mux:$00000|                    ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX3|lpm_mux:$00000                                             ; lpm_mux          ; work         ;
 ;          |mux_flc:auto_generated|         ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX3|lpm_mux:$00000|mux_flc:auto_generated                      ; mux_flc          ; work         ;
-;    |busmux:MUX|                           ; 14 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX                                                             ; busmux           ; work         ;
-;       |lpm_mux:$00000|                    ; 14 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX|lpm_mux:$00000                                              ; lpm_mux          ; work         ;
-;          |mux_flc:auto_generated|         ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX|lpm_mux:$00000|mux_flc:auto_generated                       ; mux_flc          ; work         ;
-;    |cpu_decoder:decoder|                  ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|cpu_decoder:decoder                                                    ; cpu_decoder      ; work         ;
-;    |cpu_statemachine:inst10|              ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|cpu_statemachine:inst10                                                ; cpu_statemachine ; work         ;
+;    |busmux:MUX|                           ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX                                                             ; busmux           ; work         ;
+;       |lpm_mux:$00000|                    ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX|lpm_mux:$00000                                              ; lpm_mux          ; work         ;
+;          |mux_flc:auto_generated|         ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX|lpm_mux:$00000|mux_flc:auto_generated                       ; mux_flc          ; work         ;
+;    |cpu_decoder:decoder|                  ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|cpu_decoder:decoder                                                    ; cpu_decoder      ; work         ;
+;    |cpu_statemachine:inst10|              ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|cpu_statemachine:inst10                                                ; cpu_statemachine ; work         ;
 ;    |lpm_add_sub:ALU|                      ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_add_sub:ALU                                                        ; lpm_add_sub      ; work         ;
 ;       |add_sub_i1b:auto_generated|        ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_add_sub:ALU|add_sub_i1b:auto_generated                             ; add_sub_i1b      ; work         ;
 ;    |lpm_counter:inst4|                    ; 14 (0)              ; 12 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_counter:inst4                                                      ; lpm_counter      ; work         ;
@@ -344,32 +345,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+---------------------------------+
 
 
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BUSMUX:MUX ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; WIDTH          ; 16    ; Signed Integer                 ;
-+----------------+-------+--------------------------------+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_SHIFTREG:ACC ;
++------------------------+-----------+--------------------------+
+; Parameter Name         ; Value     ; Type                     ;
++------------------------+-----------+--------------------------+
+; LPM_WIDTH              ; 16        ; Signed Integer           ;
+; LPM_DIRECTION          ; RIGHT     ; Untyped                  ;
+; LPM_AVALUE             ; UNUSED    ; Untyped                  ;
+; LPM_SVALUE             ; UNUSED    ; Untyped                  ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                  ;
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY               ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY             ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE             ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE           ;
++------------------------+-----------+--------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_FF:IR ;
-+------------------------+-----------+-------------------+
-; Parameter Name         ; Value     ; Type              ;
-+------------------------+-----------+-------------------+
-; LPM_WIDTH              ; 16        ; Untyped           ;
-; LPM_AVALUE             ; UNUSED    ; Untyped           ;
-; LPM_SVALUE             ; UNUSED    ; Untyped           ;
-; LPM_FFTYPE             ; DFF       ; Untyped           ;
-; DEVICE_FAMILY          ; Cyclone V ; Untyped           ;
-; CBXI_PARAMETER         ; NOTHING   ; Untyped           ;
-; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY        ;
-; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY      ;
-; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE      ;
-; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE    ;
-+------------------------+-----------+-------------------+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:MUX3 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; WIDTH          ; 16    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_ADD_SUB:ALU ;
++------------------------+-------------+-----------------------+
+; Parameter Name         ; Value       ; Type                  ;
++------------------------+-------------+-----------------------+
+; LPM_WIDTH              ; 16          ; Signed Integer        ;
+; LPM_REPRESENTATION     ; SIGNED      ; Untyped               ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped               ;
+; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped               ;
+; LPM_PIPELINE           ; 0           ; Untyped               ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped               ;
+; REGISTERED_AT_END      ; 0           ; Untyped               ;
+; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped               ;
+; USE_CS_BUFFERS         ; 1           ; Untyped               ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped               ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH    ;
+; DEVICE_FAMILY          ; Cyclone V   ; Untyped               ;
+; USE_WYS                ; OFF         ; Untyped               ;
+; STYLE                  ; FAST        ; Untyped               ;
+; CBXI_PARAMETER         ; add_sub_i1b ; Untyped               ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE        ;
++------------------------+-------------+-----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -471,59 +499,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_SHIFTREG:ACC ;
-+------------------------+-----------+--------------------------+
-; Parameter Name         ; Value     ; Type                     ;
-+------------------------+-----------+--------------------------+
-; LPM_WIDTH              ; 16        ; Signed Integer           ;
-; LPM_DIRECTION          ; RIGHT     ; Untyped                  ;
-; LPM_AVALUE             ; UNUSED    ; Untyped                  ;
-; LPM_SVALUE             ; UNUSED    ; Untyped                  ;
-; DEVICE_FAMILY          ; Cyclone V ; Untyped                  ;
-; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY               ;
-; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY             ;
-; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE             ;
-; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE           ;
-+------------------------+-----------+--------------------------+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:MUX ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; WIDTH          ; 16    ; Signed Integer                 ;
++----------------+-------+--------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BUSMUX:MUX3 ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; WIDTH          ; 16    ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_ADD_SUB:ALU ;
-+------------------------+-------------+-----------------------+
-; Parameter Name         ; Value       ; Type                  ;
-+------------------------+-------------+-----------------------+
-; LPM_WIDTH              ; 16          ; Signed Integer        ;
-; LPM_REPRESENTATION     ; SIGNED      ; Untyped               ;
-; LPM_DIRECTION          ; DEFAULT     ; Untyped               ;
-; ONE_INPUT_IS_CONSTANT  ; NO          ; Untyped               ;
-; LPM_PIPELINE           ; 0           ; Untyped               ;
-; MAXIMIZE_SPEED         ; 5           ; Untyped               ;
-; REGISTERED_AT_END      ; 0           ; Untyped               ;
-; OPTIMIZE_FOR_SPEED     ; 5           ; Untyped               ;
-; USE_CS_BUFFERS         ; 1           ; Untyped               ;
-; CARRY_CHAIN            ; MANUAL      ; Untyped               ;
-; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH    ;
-; DEVICE_FAMILY          ; Cyclone V   ; Untyped               ;
-; USE_WYS                ; OFF         ; Untyped               ;
-; STYLE                  ; FAST        ; Untyped               ;
-; CBXI_PARAMETER         ; add_sub_i1b ; Untyped               ;
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY            ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY          ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE          ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE        ;
-+------------------------+-------------+-----------------------+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_FF:IR ;
++------------------------+-----------+-------------------+
+; Parameter Name         ; Value     ; Type              ;
++------------------------+-----------+-------------------+
+; LPM_WIDTH              ; 16        ; Untyped           ;
+; LPM_AVALUE             ; UNUSED    ; Untyped           ;
+; LPM_SVALUE             ; UNUSED    ; Untyped           ;
+; LPM_FFTYPE             ; DFF       ; Untyped           ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped           ;
+; CBXI_PARAMETER         ; NOTHING   ; Untyped           ;
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY        ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY      ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE      ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE    ;
++------------------------+-----------+-------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -538,6 +539,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CBXI_PARAMETER     ; lpm_constant_6e6 ; Untyped                                                 ;
 +--------------------+------------------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_SHIFTREG:ACC3 ;
++------------------------+-----------+---------------------------+
+; Parameter Name         ; Value     ; Type                      ;
++------------------------+-----------+---------------------------+
+; LPM_WIDTH              ; 16        ; Signed Integer            ;
+; LPM_DIRECTION          ; LEFT      ; Untyped                   ;
+; LPM_AVALUE             ; UNUSED    ; Untyped                   ;
+; LPM_SVALUE             ; UNUSED    ; Untyped                   ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                   ;
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE            ;
++------------------------+-----------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------+
+; lpm_shiftreg Parameter Settings by Entity Instance ;
++----------------------------+-----------------------+
+; Name                       ; Value                 ;
++----------------------------+-----------------------+
+; Number of entity instances ; 2                     ;
+; Entity Instance            ; LPM_SHIFTREG:ACC      ;
+;     -- LPM_WIDTH           ; 16                    ;
+;     -- LPM_DIRECTION       ; RIGHT                 ;
+; Entity Instance            ; LPM_SHIFTREG:ACC3     ;
+;     -- LPM_WIDTH           ; 16                    ;
+;     -- LPM_DIRECTION       ; LEFT                  ;
++----------------------------+-----------------------+
 
 
 +-------------------------------------------------------------------------------------+
@@ -560,18 +594,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-----------------------------------------+
 
 
-+----------------------------------------------------+
-; lpm_shiftreg Parameter Settings by Entity Instance ;
-+----------------------------+-----------------------+
-; Name                       ; Value                 ;
-+----------------------------+-----------------------+
-; Number of entity instances ; 1                     ;
-; Entity Instance            ; LPM_SHIFTREG:ACC      ;
-;     -- LPM_WIDTH           ; 16                    ;
-;     -- LPM_DIRECTION       ; RIGHT                 ;
-+----------------------------+-----------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -581,23 +603,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 28                          ;
 ;     SLD               ; 16                          ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 90                          ;
+; arriav_lcell_comb     ; 95                          ;
 ;     arith             ; 29                          ;
 ;         1 data inputs ; 13                          ;
 ;         3 data inputs ; 16                          ;
-;     normal            ; 61                          ;
+;     normal            ; 66                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 7                           ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 17                          ;
-;         5 data inputs ; 16                          ;
-;         6 data inputs ; 3                           ;
-; boundary_port         ; 96                          ;
+;         3 data inputs ; 30                          ;
+;         4 data inputs ; 18                          ;
+;         5 data inputs ; 6                           ;
+;         6 data inputs ; 2                           ;
+; boundary_port         ; 93                          ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.60                        ;
-; Average LUT depth     ; 3.08                        ;
+; Average LUT depth     ; 3.34                        ;
 +-----------------------+-----------------------------+
 
 
@@ -616,7 +638,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Feb 24 15:16:38 2020
+    Info: Processing started: Mon Feb 24 16:46:39 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MU0CPUFINAL -c MU0CPUFINAL
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -640,23 +662,31 @@ Info (12021): Found 1 design units, including 1 entities, in source file MU0CPUF
 Info (12021): Found 1 design units, including 1 entities, in source file statemachineisolatedtest.bdf
     Info (12023): Found entity 1: statemachineisolatedtest
 Info (12127): Elaborating entity "MU0CPU" for the top level hierarchy
-Warning (275011): Block or symbol "cpu_decoder" of instance "decoder" overlaps another block or symbol
-Info (12128): Elaborating entity "cpu_statemachine" for hierarchy "cpu_statemachine:inst10"
 Info (12128): Elaborating entity "cpu_decoder" for hierarchy "cpu_decoder:decoder"
-Warning (10036): Verilog HDL or VHDL warning at cpu_decoder.v(18): object "STP" assigned a value but never read File: /home/wz1119/nfshome/MU0CPUFINAL/cpu_decoder.v Line: 18
-Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:MUX"
-Info (12130): Elaborated megafunction instantiation "BUSMUX:MUX"
-Info (12133): Instantiated megafunction "BUSMUX:MUX" with the following parameter:
+Warning (10036): Verilog HDL or VHDL warning at cpu_decoder.v(20): object "STP" assigned a value but never read File: /home/wz1119/nfshome/MU0CPUFINAL/cpu_decoder.v Line: 20
+Info (12128): Elaborating entity "cpu_statemachine" for hierarchy "cpu_statemachine:inst10"
+Info (12128): Elaborating entity "3_bit_register" for hierarchy "3_bit_register:register3"
+Info (12128): Elaborating entity "LPM_SHIFTREG" for hierarchy "LPM_SHIFTREG:ACC"
+Info (12130): Elaborated megafunction instantiation "LPM_SHIFTREG:ACC"
+Info (12133): Instantiated megafunction "LPM_SHIFTREG:ACC" with the following parameter:
+    Info (12134): Parameter "LPM_DIRECTION" = "RIGHT"
+    Info (12134): Parameter "LPM_WIDTH" = "16"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:MUX3"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:MUX3"
+Info (12133): Instantiated megafunction "BUSMUX:MUX3" with the following parameter:
     Info (12134): Parameter "WIDTH" = "16"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:MUX|lpm_mux:$00000" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
-Info (12131): Elaborated megafunction instantiation "BUSMUX:MUX|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:MUX" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:MUX3|lpm_mux:$00000" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "BUSMUX:MUX3|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:MUX3" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_flc.tdf
     Info (12023): Found entity 1: mux_flc File: /home/wz1119/nfshome/MU0CPUFINAL/db/mux_flc.tdf Line: 22
-Info (12128): Elaborating entity "mux_flc" for hierarchy "BUSMUX:MUX|lpm_mux:$00000|mux_flc:auto_generated" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
-Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:IR"
-Info (12130): Elaborated megafunction instantiation "LPM_FF:IR"
-Info (12133): Instantiated megafunction "LPM_FF:IR" with the following parameter:
+Info (12128): Elaborating entity "mux_flc" for hierarchy "BUSMUX:MUX3|lpm_mux:$00000|mux_flc:auto_generated" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "LPM_ADD_SUB" for hierarchy "LPM_ADD_SUB:ALU"
+Info (12130): Elaborated megafunction instantiation "LPM_ADD_SUB:ALU"
+Info (12133): Instantiated megafunction "LPM_ADD_SUB:ALU" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "16"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_i1b.tdf
+    Info (12023): Found entity 1: add_sub_i1b File: /home/wz1119/nfshome/MU0CPUFINAL/db/add_sub_i1b.tdf Line: 25
+Info (12128): Elaborating entity "add_sub_i1b" for hierarchy "LPM_ADD_SUB:ALU|add_sub_i1b:auto_generated" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 118
 Info (12128): Elaborating entity "ram" for hierarchy "ram:ram"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:ram|altsyncram:altsyncram_component" File: /home/wz1119/nfshome/MU0CPUFINAL/ram.v Line: 85
 Info (12130): Elaborated megafunction instantiation "ram:ram|altsyncram:altsyncram_component" File: /home/wz1119/nfshome/MU0CPUFINAL/ram.v Line: 85
@@ -695,19 +725,10 @@ Info (12133): Instantiated megafunction "LPM_COUNTER:inst4" with the following p
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_0gh.tdf
     Info (12023): Found entity 1: cntr_0gh File: /home/wz1119/nfshome/MU0CPUFINAL/db/cntr_0gh.tdf Line: 25
 Info (12128): Elaborating entity "cntr_0gh" for hierarchy "LPM_COUNTER:inst4|cntr_0gh:auto_generated" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
-Info (12128): Elaborating entity "LPM_SHIFTREG" for hierarchy "LPM_SHIFTREG:ACC"
-Info (12130): Elaborated megafunction instantiation "LPM_SHIFTREG:ACC"
-Info (12133): Instantiated megafunction "LPM_SHIFTREG:ACC" with the following parameter:
-    Info (12134): Parameter "LPM_DIRECTION" = "RIGHT"
+Info (12128): Elaborating entity "LPM_FF" for hierarchy "LPM_FF:IR"
+Info (12130): Elaborated megafunction instantiation "LPM_FF:IR"
+Info (12133): Instantiated megafunction "LPM_FF:IR" with the following parameter:
     Info (12134): Parameter "LPM_WIDTH" = "16"
-Info (12128): Elaborating entity "LPM_ADD_SUB" for hierarchy "LPM_ADD_SUB:ALU"
-Info (12130): Elaborated megafunction instantiation "LPM_ADD_SUB:ALU"
-Info (12133): Instantiated megafunction "LPM_ADD_SUB:ALU" with the following parameter:
-    Info (12134): Parameter "LPM_WIDTH" = "16"
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_i1b.tdf
-    Info (12023): Found entity 1: add_sub_i1b File: /home/wz1119/nfshome/MU0CPUFINAL/db/add_sub_i1b.tdf Line: 25
-Info (12128): Elaborating entity "add_sub_i1b" for hierarchy "LPM_ADD_SUB:ALU|add_sub_i1b:auto_generated" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf Line: 118
-Info (12128): Elaborating entity "3_bit_register" for hierarchy "3_bit_register:register3"
 Info (12128): Elaborating entity "constant" for hierarchy "constant:inst5"
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "constant:inst5|lpm_constant:LPM_CONSTANT_component" File: /home/wz1119/nfshome/MU0CPUFINAL/constant.v Line: 48
 Info (12130): Elaborated megafunction instantiation "constant:inst5|lpm_constant:LPM_CONSTANT_component" File: /home/wz1119/nfshome/MU0CPUFINAL/constant.v Line: 48
@@ -716,20 +737,25 @@ Info (12133): Instantiated megafunction "constant:inst5|lpm_constant:LPM_CONSTAN
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "4"
+Info (12128): Elaborating entity "LPM_SHIFTREG" for hierarchy "LPM_SHIFTREG:ACC3"
+Info (12130): Elaborated megafunction instantiation "LPM_SHIFTREG:ACC3"
+Info (12133): Instantiated megafunction "LPM_SHIFTREG:ACC3" with the following parameter:
+    Info (12134): Parameter "LPM_DIRECTION" = "LEFT"
+    Info (12134): Parameter "LPM_WIDTH" = "16"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "STATE[2]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 232 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 235 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 95 output pins
-    Info (21061): Implemented 120 logic cells
+    Info (21059): Implemented 92 output pins
+    Info (21061): Implemented 126 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1239 megabytes
-    Info: Processing ended: Mon Feb 24 15:16:48 2020
-    Info: Elapsed time: 00:00:10
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1251 megabytes
+    Info: Processing ended: Mon Feb 24 16:46:50 2020
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:28
 
 
