@@ -4,183 +4,307 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "sel_busmux",
+					"name" : "MUXX",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[15]",
+					"name" : "ACC_OUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[14]",
+					"name" : "ACC_OUT[14]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[13]",
+					"name" : "ACC_OUT[13]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[12]",
+					"name" : "ACC_OUT[12]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[11]",
+					"name" : "ACC_OUT[11]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[10]",
+					"name" : "ACC_OUT[10]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[9]",
+					"name" : "ACC_OUT[9]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[8]",
+					"name" : "ACC_OUT[8]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[7]",
+					"name" : "ACC_OUT[7]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[6]",
+					"name" : "ACC_OUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[5]",
+					"name" : "ACC_OUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[4]",
+					"name" : "ACC_OUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[3]",
+					"name" : "ACC_OUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[2]",
+					"name" : "ACC_OUT[2]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[1]",
+					"name" : "ACC_OUT[1]",
 					"strict" : false
 				},
 				{
-					"name" : "acc_out[0]",
+					"name" : "ACC_OUT[0]",
 					"strict" : false
 				},
 				{
-					"name" : "address[11]",
+					"name" : "RAM_OUT[15]",
 					"strict" : false
 				},
 				{
-					"name" : "address[10]",
+					"name" : "RAM_OUT[14]",
 					"strict" : false
 				},
 				{
-					"name" : "address[9]",
+					"name" : "RAM_OUT[13]",
 					"strict" : false
 				},
 				{
-					"name" : "address[8]",
+					"name" : "RAM_OUT[12]",
 					"strict" : false
 				},
 				{
-					"name" : "address[7]",
+					"name" : "RAM_OUT[11]",
 					"strict" : false
 				},
 				{
-					"name" : "address[6]",
+					"name" : "RAM_OUT[10]",
 					"strict" : false
 				},
 				{
-					"name" : "address[5]",
+					"name" : "RAM_OUT[9]",
 					"strict" : false
 				},
 				{
-					"name" : "address[4]",
+					"name" : "RAM_OUT[8]",
 					"strict" : false
 				},
 				{
-					"name" : "address[3]",
+					"name" : "RAM_OUT[7]",
 					"strict" : false
 				},
 				{
-					"name" : "address[2]",
+					"name" : "RAM_OUT[6]",
 					"strict" : false
 				},
 				{
-					"name" : "address[1]",
+					"name" : "RAM_OUT[5]",
 					"strict" : false
 				},
 				{
-					"name" : "address[0]",
+					"name" : "RAM_OUT[4]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[15]",
+					"name" : "RAM_OUT[3]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[14]",
+					"name" : "RAM_OUT[2]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[13]",
+					"name" : "RAM_OUT[1]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[12]",
+					"name" : "RAM_OUT[0]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[11]",
+					"name" : "RAM_ADDRESS_IN[11]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[10]",
+					"name" : "RAM_ADDRESS_IN[10]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[9]",
+					"name" : "RAM_ADDRESS_IN[9]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[8]",
+					"name" : "RAM_ADDRESS_IN[8]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[7]",
+					"name" : "RAM_ADDRESS_IN[7]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[6]",
+					"name" : "RAM_ADDRESS_IN[6]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[5]",
+					"name" : "RAM_ADDRESS_IN[5]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[4]",
+					"name" : "RAM_ADDRESS_IN[4]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[3]",
+					"name" : "RAM_ADDRESS_IN[3]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[2]",
+					"name" : "RAM_ADDRESS_IN[2]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[1]",
+					"name" : "RAM_ADDRESS_IN[1]",
 					"strict" : false
 				},
 				{
-					"name" : "beforemux3[0]",
+					"name" : "RAM_ADDRESS_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FETCH",
+					"strict" : false
+				},
+				{
+					"name" : "EXEC2",
+					"strict" : false
+				},
+				{
+					"name" : "EXEC1",
+					"strict" : false
+				},
+				{
+					"name" : "accum[15]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[14]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[13]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[12]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[11]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[10]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[9]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[8]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[7]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[6]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[5]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[4]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[3]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[2]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[1]",
+					"strict" : false
+				},
+				{
+					"name" : "accum[0]",
 					"strict" : false
 				},
 				{
@@ -245,126 +369,6 @@
 				},
 				{
 					"name" : "MERGED[0]",
-					"strict" : false
-				},
-				{
-					"name" : "out[15]",
-					"strict" : false
-				},
-				{
-					"name" : "out[14]",
-					"strict" : false
-				},
-				{
-					"name" : "out[13]",
-					"strict" : false
-				},
-				{
-					"name" : "out[12]",
-					"strict" : false
-				},
-				{
-					"name" : "out[11]",
-					"strict" : false
-				},
-				{
-					"name" : "out[10]",
-					"strict" : false
-				},
-				{
-					"name" : "out[9]",
-					"strict" : false
-				},
-				{
-					"name" : "out[8]",
-					"strict" : false
-				},
-				{
-					"name" : "out[7]",
-					"strict" : false
-				},
-				{
-					"name" : "out[6]",
-					"strict" : false
-				},
-				{
-					"name" : "out[5]",
-					"strict" : false
-				},
-				{
-					"name" : "out[4]",
-					"strict" : false
-				},
-				{
-					"name" : "out[3]",
-					"strict" : false
-				},
-				{
-					"name" : "out[2]",
-					"strict" : false
-				},
-				{
-					"name" : "out[1]",
-					"strict" : false
-				},
-				{
-					"name" : "out[0]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[11]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[10]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[9]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[8]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[7]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[6]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[5]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[4]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[3]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[2]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[1]",
-					"strict" : false
-				},
-				{
-					"name" : "pcout[0]",
-					"strict" : false
-				},
-				{
-					"name" : "STATE[1]",
-					"strict" : false
-				},
-				{
-					"name" : "STATE[0]",
 					"strict" : false
 				},
 				{

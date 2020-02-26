@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/17/2020 15:05:58"
+// Generated on "02/26/2020 11:13:50"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          MU0CPU
 // 
@@ -31,17 +31,19 @@ module MU0CPU_vlg_vec_tst();
 // general purpose registers
 reg CLK;
 // wires                                               
-wire [15:0] accout;
-wire [15:0] out;
-wire [11:0] pcout;
+wire [15:0] ACC_OUT;
+wire [15:0] MERGED;
+wire [11:0] RAM_ADDRESS_IN;
+wire [15:0] RAM_OUT;
 
 // assign statements (if any)                          
 MU0CPU i1 (
 // port map - connection between master ports and signals/registers   
-	.accout(accout),
+	.ACC_OUT(ACC_OUT),
 	.CLK(CLK),
-	.out(out),
-	.pcout(pcout)
+	.MERGED(MERGED),
+	.RAM_ADDRESS_IN(RAM_ADDRESS_IN),
+	.RAM_OUT(RAM_OUT)
 );
 initial 
 begin 
