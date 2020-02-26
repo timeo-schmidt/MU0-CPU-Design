@@ -21,7 +21,7 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 40 320 208 336)
+	(rect -1008 872 -840 888)
 	(text "INPUT" (rect 125 0 156 10)(font "Arial" (font_size 6)))
 	(text "CLK" (rect 5 0 26 11)(font "Arial" ))
 	(pt 168 8)
@@ -37,39 +37,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1216 472 1392 488)
-	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "out[15..0]" (rect 90 0 138 11)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 696 -520 872 -504)
-	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "pcout[11..0]" (rect 90 0 149 11)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 80 280 258 296)
+	(rect -520 72 -342 88)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
 	(text "MERGED[15..0]" (rect 90 0 172 11)(font "Arial" ))
 	(pt 0 8)
@@ -85,26 +53,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 392 -200 568 -184)
-	(text "OUTPUT" (rect 135 6 175 16)(font "Arial" (font_size 6)))
-	(text "STATE[2..0]" (rect 5 5 66 16)(font "Arial" ))
-	(pt 176 8)
-	(drawing
-		(line (pt 176 8)(pt 124 8))
-		(line (pt 124 12)(pt 98 12))
-		(line (pt 124 4)(pt 98 4))
-		(line (pt 124 4)(pt 124 12))
-		(line (pt 98 12)(pt 94 8))
-		(line (pt 94 8)(pt 98 4))
-		(line (pt 98 4)(pt 94 8))
-	)
-	(rotate180)
-)
-(pin
-	(output)
-	(rect 64 440 250 456)
+	(rect -976 960 -800 976)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "beforemux3[15..0]" (rect 90 0 180 13)(font "Intel Clear" ))
+	(text "RAM_OUT" (rect 90 0 144 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -118,9 +69,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1120 -456 1296 -440)
+	(rect -976 1008 -786 1024)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "address[11..0]" (rect 90 0 159 11)(font "Arial" ))
+	(text "RAM_ADDRESS_IN" (rect 90 0 184 13)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -134,25 +85,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1360 -384 1536 -368)
+	(rect -976 1056 -800 1072)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "sel_busmux" (rect 90 0 151 11)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect -72 -416 104 -400)
-	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "acc_out[15..0]" (rect 90 0 159 11)(font "Arial" ))
+	(text "ACC_OUT" (rect 90 0 137 13)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -165,119 +100,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 624 240 800 384)
-	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
-	(text "IR" (rect 3 133 13 146)(font "Intel Clear" ))
-	(port
-		(pt 88 144)
-		(input)
-		(text "aclr" (rect 80 113 101 126)(font "Arial" (font_size 8)))
-		(text "aclr" (rect 80 113 101 126)(font "Arial" (font_size 8)))
-		(line (pt 88 144)(pt 88 128))
-		(unused)
-	)
-	(port
-		(pt 0 24)
-		(input)
-		(text "aload" (rect 20 17 50 30)(font "Arial" (font_size 8)))
-		(text "aload" (rect 20 17 50 30)(font "Arial" (font_size 8)))
-		(line (pt 0 24)(pt 16 24))
-		(unused)
-	)
-	(port
-		(pt 88 0)
-		(input)
-		(text "aset" (rect 79 17 102 30)(font "Arial" (font_size 8)))
-		(text "aset" (rect 79 17 102 30)(font "Arial" (font_size 8)))
-		(line (pt 88 16)(pt 88 0))
-		(unused)
-	)
-	(port
-		(pt 0 88)
-		(input)
-		(text "clock" (rect 20 81 48 94)(font "Arial" (font_size 8))(invisible))
-		(text "clock" (rect 20 81 48 94)(font "Arial" (font_size 8))(invisible))
-		(line (pt 0 88)(pt 16 88))
-	)
-	(port
-		(pt 0 72)
-		(input)
-		(text "data[LPM_WIDTH-1..0]" (rect 20 63 152 76)(font "Arial" (font_size 8)))
-		(text "data[]" (rect 20 63 51 76)(font "Arial" (font_size 8)))
-		(line (pt 0 72)(pt 16 72)(line_width 3))
-	)
-	(port
-		(pt 0 104)
-		(input)
-		(text "enable" (rect 20 97 60 110)(font "Arial" (font_size 8)))
-		(text "enable" (rect 20 97 60 110)(font "Arial" (font_size 8)))
-		(line (pt 0 104)(pt 16 104))
-		(unused)
-	)
-	(port
-		(pt 0 120)
-		(input)
-		(text "sclr" (rect 20 113 38 126)(font "Arial" (font_size 8)))
-		(text "sclr" (rect 20 113 38 126)(font "Arial" (font_size 8)))
-		(line (pt 0 120)(pt 16 120))
-		(unused)
-	)
-	(port
-		(pt 0 56)
-		(input)
-		(text "sload" (rect 20 49 48 62)(font "Arial" (font_size 8)))
-		(text "sload" (rect 20 49 48 62)(font "Arial" (font_size 8)))
-		(line (pt 0 56)(pt 16 56))
-	)
-	(port
-		(pt 0 40)
-		(input)
-		(text "sset" (rect 20 33 41 46)(font "Arial" (font_size 8)))
-		(text "sset" (rect 20 33 41 46)(font "Arial" (font_size 8)))
-		(line (pt 0 40)(pt 16 40))
-		(unused)
-	)
-	(port
-		(pt 176 88)
-		(output)
-		(text "q[LPM_WIDTH-1..0]" (rect 144 81 258 94)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 144 81 158 94)(font "Arial" (font_size 8)))
-		(line (pt 160 88)(pt 176 88)(line_width 3))
-	)
-	(parameter
-		"LPM_AVALUE"
-		""
-		"Unsigned value associated with the aset port"
-	)
-	(parameter
-		"LPM_FFTYPE"
-		""
-		"Selects behavior as DFF or TFF"
-		"\"DFF\"" "\"TFF\"" 
-	)
-	(parameter
-		"LPM_SVALUE"
-		""
-		"Unsigned value associated with the sset port"
-	)
-	(parameter
-		"LPM_WIDTH"
-		"16"
-		"Width of I/O, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-	)
-	(drawing
-		(line (pt 16 16)(pt 160 16))
-		(line (pt 16 128)(pt 160 128))
-		(line (pt 160 128)(pt 160 16))
-		(line (pt 16 128)(pt 16 16))
-		(line (pt 16 80)(pt 24 88))
-		(line (pt 24 88)(pt 16 96))
-	)
-	(annotation_block (parameter)(rect 640 384 780 459))
-)
-(symbol
-	(rect 800 80 888 192)
+	(rect 744 288 832 400)
 	(text "BUSMUX" (rect 0 18 16 84)(font "Arial" (font_size 10))(vertical))
 	(text "MUX" (rect 78 87 91 115)(font "Arial" (font_size 8))(vertical))
 	(port
@@ -323,10 +146,10 @@ refer to the applicable agreement for further details.
 		(line (pt 80 68)(pt 64 44))
 	)
 	(rotate90)
-	(annotation_block (parameter)(rect 560 88 758 118))
+	(annotation_block (parameter)(rect 848 368 1046 398))
 )
 (symbol
-	(rect 952 -496 1064 -408)
+	(rect 952 -504 1064 -416)
 	(text "BUSMUX" (rect 28 0 94 16)(font "Arial" (font_size 10)))
 	(text "MUX1" (rect -6 77 25 90)(font "Intel Clear" ))
 	(port
@@ -371,10 +194,10 @@ refer to the applicable agreement for further details.
 		(line (pt 44 16)(pt 68 32))
 		(line (pt 44 80)(pt 68 64))
 	)
-	(annotation_block (parameter)(rect 920 -536 1118 -506))
+	(annotation_block (parameter)(rect 920 -544 1118 -514))
 )
 (symbol
-	(rect -104 192 -16 304)
+	(rect -704 -16 -616 96)
 	(text "BUSMUX" (rect 0 18 16 84)(font "Arial" (font_size 10))(vertical))
 	(text "MUX3" (rect 77 82 90 113)(font "Intel Clear" )(vertical))
 	(port
@@ -420,10 +243,10 @@ refer to the applicable agreement for further details.
 		(line (pt 80 68)(pt 64 44))
 	)
 	(rotate90)
-	(annotation_block (parameter)(rect 8 208 206 238))
+	(annotation_block (parameter)(rect -608 -32 -410 -2))
 )
 (symbol
-	(rect -256 336 -88 496)
+	(rect -856 128 -688 288)
 	(text "LPM_ADD_SUB" (rect 0 9 16 123)(font "Arial" (font_size 10))(vertical))
 	(text "ALU" (rect 155 110 168 131)(font "Intel Clear" )(vertical))
 	(port
@@ -562,7 +385,7 @@ refer to the applicable agreement for further details.
 		(line (pt 136 104)(pt 112 56))
 	)
 	(rotate90)
-	(annotation_block (parameter)(rect -104 552 180 657))
+	(annotation_block (parameter)(rect -1304 160 -1020 265))
 )
 (symbol
 	(rect 448 -568 584 -368)
@@ -713,10 +536,10 @@ refer to the applicable agreement for further details.
 		(line (pt 16 136)(pt 24 128))
 		(line (pt 24 128)(pt 16 120))
 	)
-	(annotation_block (parameter)(rect 584 -680 837 -575))
+	(annotation_block (parameter)(rect 400 -680 653 -575))
 )
 (symbol
-	(rect -136 -40 8 96)
+	(rect -736 -248 -592 -112)
 	(text "LPM_SHIFTREG" (rect 0 -1 16 117)(font "Arial" (font_size 10))(vertical))
 	(text "ACC" (rect 133 106 146 126)(font "Intel Clear" )(vertical))
 	(port
@@ -832,10 +655,10 @@ refer to the applicable agreement for further details.
 		(line (pt 104 112)(pt 112 120))
 	)
 	(rotate90)
-	(annotation_block (parameter)(rect -32 -208 207 -133))
+	(annotation_block (parameter)(rect -1240 -216 -1001 -141))
 )
 (symbol
-	(rect 1048 32 1176 248)
+	(rect 2008 -168 2136 48)
 	(text "ram" (rect 112 97 128 124)(font "Arial" (font_size 10))(vertical))
 	(text "ram" (rect 4 8 15 29)(font "Arial" )(vertical))
 	(port
@@ -920,7 +743,7 @@ refer to the applicable agreement for further details.
 	(rotate270)
 )
 (symbol
-	(rect 80 368 192 416)
+	(rect -592 152 -480 200)
 	(text "constant" (rect 20 32 81 48)(font "Arial" (font_size 10)))
 	(text "inst5" (rect 80 4 104 15)(font "Arial" ))
 	(port
@@ -949,7 +772,7 @@ refer to the applicable agreement for further details.
 	(rotate180)
 )
 (symbol
-	(rect 456 -320 624 -208)
+	(rect 296 -320 464 -208)
 	(text "cpu_statemachine" (rect 5 0 97 11)(font "Arial" ))
 	(text "inst10" (rect 8 96 38 107)(font "Arial" ))
 	(port
@@ -999,7 +822,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 632 -272 768 -176)
+	(rect 512 -248 648 -152)
 	(text "3_bit_register" (rect 5 0 91 15)(font "Intel Clear" (font_size 8)))
 	(text "register3" (rect 8 79 52 92)(font "Intel Clear" ))
 	(port
@@ -1028,126 +851,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -288 -48 -144 88)
-	(text "LPM_SHIFTREG" (rect 0 -1 16 117)(font "Arial" (font_size 10))(vertical))
-	(text "ACC3" (rect 133 106 146 131)(font "Intel Clear" )(vertical))
-	(port
-		(pt 144 48)
-		(input)
-		(text "aclr" (rect 72 111 85 132)(font "Arial" (font_size 8))(vertical))
-		(text "aclr" (rect 111 51 132 64)(font "Arial" (font_size 8)))
-		(line (pt 144 48)(pt 128 48))
-		(unused)
-	)
-	(port
-		(pt 144 32)
-		(input)
-		(text "aset" (rect 96 107 109 130)(font "Arial" (font_size 8))(vertical))
-		(text "aset" (rect 107 27 130 40)(font "Arial" (font_size 8)))
-		(line (pt 144 32)(pt 128 32))
-		(unused)
-	)
-	(port
-		(pt 104 136)
-		(input)
-		(text "clock" (rect 20 97 48 110)(font "Arial" (font_size 8))(invisible))
-		(text "clock" (rect 97 88 110 116)(font "Arial" (font_size 8))(vertical)(invisible))
-		(line (pt 104 136)(pt 104 120))
-	)
-	(port
-		(pt 88 136)
-		(input)
-		(text "data[LPM_WIDTH-1..0]" (rect 20 81 152 94)(font "Arial" (font_size 8)))
-		(text "data[]" (rect 81 85 94 116)(font "Arial" (font_size 8))(vertical))
-		(line (pt 88 136)(pt 88 120)(line_width 3))
-	)
-	(port
-		(pt 120 136)
-		(input)
-		(text "enable" (rect 20 113 60 126)(font "Arial" (font_size 8)))
-		(text "enable" (rect 113 76 126 116)(font "Arial" (font_size 8))(vertical))
-		(line (pt 120 136)(pt 120 120))
-	)
-	(port
-		(pt 72 136)
-		(input)
-		(text "load" (rect 20 65 43 78)(font "Arial" (font_size 8)))
-		(text "load" (rect 65 93 78 116)(font "Arial" (font_size 8))(vertical))
-		(line (pt 72 136)(pt 72 120))
-	)
-	(port
-		(pt 24 136)
-		(input)
-		(text "sclr" (rect 20 17 38 30)(font "Arial" (font_size 8)))
-		(text "sclr" (rect 17 98 30 116)(font "Arial" (font_size 8))(vertical))
-		(line (pt 24 136)(pt 24 120))
-		(unused)
-	)
-	(port
-		(pt 56 136)
-		(input)
-		(text "shiftin" (rect 20 49 55 62)(font "Arial" (font_size 8)))
-		(text "shiftin" (rect 49 81 62 116)(font "Arial" (font_size 8))(vertical))
-		(line (pt 56 136)(pt 56 120))
-	)
-	(port
-		(pt 40 136)
-		(input)
-		(text "sset" (rect 20 33 41 46)(font "Arial" (font_size 8)))
-		(text "sset" (rect 33 95 46 116)(font "Arial" (font_size 8))(vertical))
-		(line (pt 40 136)(pt 40 120))
-		(unused)
-	)
-	(port
-		(pt 80 0)
-		(output)
-		(text "q[LPM_WIDTH-1..0]" (rect 100 73 214 86)(font "Arial" (font_size 8)))
-		(text "q[]" (rect 73 18 86 32)(font "Arial" (font_size 8))(vertical))
-		(line (pt 80 16)(pt 80 0)(line_width 3))
-	)
-	(port
-		(pt 64 0)
-		(output)
-		(text "shiftout" (rect 77 57 119 70)(font "Arial" (font_size 8)))
-		(text "shiftout" (rect 57 14 70 56)(font "Arial" (font_size 8))(vertical))
-		(line (pt 64 16)(pt 64 0))
-		(unused)
-	)
-	(parameter
-		"LPM_AVALUE"
-		""
-		"Unsigned value associated with the aset port"
-	)
-	(parameter
-		"LPM_DIRECTION"
-		"\"LEFT\""
-		"Selects LEFT or RIGHT shifting"
-		"\"LEFT\"" "\"RIGHT\"" 
-		(type "PARAMETER_STRING")	)
-	(parameter
-		"LPM_SVALUE"
-		""
-		"Unsigned value associated with the sset port"
-	)
-	(parameter
-		"LPM_WIDTH"
-		"16"
-		"Width of I/O, any integer > 0"
-		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
-		(type "PARAMETER_UNSIGNED_DEC")	)
-	(drawing
-		(line (pt 16 120)(pt 16 16))
-		(line (pt 128 120)(pt 128 16))
-		(line (pt 128 120)(pt 16 120))
-		(line (pt 128 16)(pt 16 16))
-		(line (pt 96 120)(pt 104 112))
-		(line (pt 104 112)(pt 112 120))
-	)
-	(rotate90)
-	(annotation_block (parameter)(rect -360 -208 -129 -133))
-)
-(symbol
-	(rect 840 -272 1072 -32)
+	(rect 1032 -288 1264 -48)
 	(text "cpu_decoder" (rect 5 0 67 11)(font "Arial" ))
 	(text "decoder" (rect 8 224 46 235)(font "Arial" ))
 	(port
@@ -1266,827 +970,658 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 216 224))
 	)
 )
-(connector
-	(pt 512 208)
-	(pt 864 208)
-	(bus)
-)
-(connector
-	(pt 512 312)
-	(pt 320 312)
-	(bus)
-)
-(connector
-	(pt 864 192)
-	(pt 864 208)
-	(bus)
-)
-(connector
-	(pt 952 -432)
-	(pt 832 -432)
-	(bus)
-)
-(connector
-	(pt 832 -424)
-	(pt 832 -432)
-	(bus)
-)
-(connector
-	(pt 1120 -440)
-	(pt 1120 -448)
-	(bus)
-)
-(connector
-	(pt 1064 -448)
-	(pt 1120 -448)
-	(bus)
-)
-(connector
-	(pt 944 -464)
-	(pt 944 -472)
-	(bus)
-)
-(connector
-	(pt 952 -464)
-	(pt 944 -464)
-	(bus)
-)
-(connector
-	(pt 208 328)
-	(pt 264 328)
-)
-(connector
-	(pt 264 328)
-	(pt 624 328)
-)
-(connector
-	(pt 832 328)
-	(pt 832 192)
-	(bus)
-)
-(connector
-	(pt 800 328)
-	(pt 832 328)
-	(bus)
-)
-(connector
-	(pt 624 -240)
-	(pt 632 -240)
-	(bus)
-)
-(connector
-	(pt 768 -240)
-	(pt 784 -240)
-	(bus)
-)
-(connector
-	(pt 784 -240)
-	(pt 784 -168)
-	(bus)
-)
-(connector
-	(pt 416 -168)
-	(pt 416 -288)
-	(bus)
-)
-(connector
-	(pt 416 -168)
-	(pt 784 -168)
-	(bus)
-)
-(connector
-	(pt 416 -288)
-	(pt 456 -288)
-	(bus)
-)
-(connector
-	(pt 1088 -360)
-	(pt 440 -360)
-)
-(connector
-	(pt 440 -360)
-	(pt 440 -272)
-)
-(connector
-	(pt 440 -272)
-	(pt 456 -272)
-)
-(connector
-	(pt 624 -288)
-	(pt 800 -288)
-)
-(connector
-	(pt 1192 -784)
-	(pt 352 -784)
-)
-(connector
-	(pt 1240 -848)
-	(pt 320 -848)
-)
-(connector
-	(pt 800 48)
-	(pt 896 48)
-)
-(connector
-	(pt 896 48)
-	(pt 896 136)
-)
-(connector
-	(pt 896 136)
-	(pt 888 136)
-)
-(connector
-	(pt 624 296)
-	(pt 608 296)
-)
-(connector
-	(pt 608 40)
-	(pt 800 40)
-)
-(connector
-	(pt 800 40)
-	(pt 800 48)
-)
-(connector
-	(pt 608 40)
-	(pt 608 296)
-)
-(connector
-	(pt 1144 480)
-	(pt 1216 480)
-	(bus)
-)
-(connector
-	(pt 696 -472)
-	(pt 696 -512)
-	(bus)
-)
-(connector
-	(pt -160 336)
-	(pt -160 312)
-	(bus)
-)
-(connector
-	(pt -160 312)
-	(pt -72 312)
-	(bus)
-)
-(connector
-	(pt -72 312)
-	(pt -72 304)
-	(bus)
-)
-(connector
-	(pt -184 512)
-	(pt -184 496)
-	(bus)
-)
-(connector
-	(pt -40 488)
-	(pt -40 520)
-	(bus)
-)
-(connector
-	(pt -136 520)
-	(pt -136 496)
-	(bus)
-)
-(connector
-	(text "RAM_OUT[15..0]" (rect -38 472 42 485)(font "Intel Clear" ))
-	(pt -40 488)
-	(pt 320 488)
-	(bus)
-)
-(connector
-	(text "RAM_OUT[15..0]" (rect -134 504 -54 517)(font "Intel Clear" ))
-	(pt -136 520)
-	(pt -40 520)
-	(bus)
-)
-(connector
-	(pt 1376 256)
-	(pt -16 256)
-)
-(connector
-	(pt -16 256)
-	(pt -16 248)
-)
-(connector
-	(pt 1088 16)
-	(pt 40 16)
-)
-(connector
-	(pt 40 16)
-	(pt 40 104)
-)
-(connector
-	(text "RAM_OUT[11..0]" (rect -56 410 -43 490)(font "Intel Clear" )(vertical))
-	(pt -40 392)
-	(pt -40 488)
-	(bus)
-)
-(connector
-	(text "lead[3..0]" (rect -38 376 5 389)(font "Intel Clear" ))
-	(pt 80 392)
-	(pt -40 392)
-	(bus)
-)
-(connector
-	(pt 1272 568)
-	(pt -224 568)
-)
-(connector
-	(pt -224 568)
-	(pt -224 496)
-)
-(connector
-	(text "k[15..0]" (rect 856 -5 891 8)(font "Intel Clear" ))
-	(pt 848 0)
-	(pt 848 80)
-	(bus)
-)
-(connector
-	(text "RAM_OUT[15..0]" (rect 354 464 434 477)(font "Intel Clear" ))
-	(pt 320 488)
-	(pt 1144 488)
-	(bus)
-)
-(connector
-	(text "RAM_OUT[15..0]" (rect 304 410 317 490)(font "Intel Clear" )(vertical))
-	(pt 320 312)
-	(pt 320 488)
-	(bus)
-)
-(connector
-	(text "RAM_OUT[15..0]" (rect 496 234 509 314)(font "Intel Clear" )(vertical))
-	(pt 512 312)
-	(pt 512 208)
-	(bus)
-)
-(connector
-	(text "RAM_OUT[15..0]" (rect 522 296 602 309)(font "Intel Clear" ))
-	(pt 624 312)
-	(pt 512 312)
-	(bus)
-)
-(connector
-	(text "k[11..0]" (rect 807 -45 820 -10)(font "Intel Clear" )(vertical))
-	(pt 824 -64)
-	(pt 824 0)
-	(bus)
-)
-(connector
-	(pt 1088 -360)
-	(pt 1088 -240)
-)
-(connector
-	(pt 1192 -784)
-	(pt 1192 -192)
-)
-(connector
-	(pt 1376 256)
-	(pt 1376 -208)
-)
-(connector
-	(pt 1088 16)
-	(pt 1088 -144)
-)
-(connector
-	(pt 824 0)
-	(pt 848 0)
-	(bus)
-)
-(connector
-	(pt 848 0)
-	(pt 856 0)
-	(bus)
-)
-(connector
-	(pt 1008 -408)
-	(pt 1104 -408)
-)
-(connector
-	(pt 624 -192)
-	(pt 568 -192)
-	(bus)
-)
-(connector
-	(pt 1120 -440)
-	(pt 1112 -440)
-	(bus)
-)
-(connector
-	(pt 1144 248)
-	(pt 1144 480)
-	(bus)
-)
-(connector
-	(pt 1144 480)
-	(pt 1144 488)
-	(bus)
-)
-(connector
-	(pt 1144 -40)
-	(pt 1144 32)
-	(bus)
-)
-(connector
-	(pt 1128 -160)
-	(pt 1128 32)
-)
-(connector
-	(pt 1112 -440)
-	(pt 1112 32)
-	(bus)
-)
-(connector
-	(pt 1064 8)
-	(pt 1064 32)
-)
-(connector
-	(pt 624 -192)
-	(pt 624 -240)
-	(bus)
-)
-(connector
-	(pt 264 8)
-	(pt 1064 8)
-)
-(connector
-	(pt 632 -224)
-	(pt 632 -120)
-)
-(connector
-	(pt 632 -120)
-	(pt 264 -120)
-)
-(connector
-	(pt -120 288)
-	(pt 80 288)
-	(bus)
-)
-(connector
-	(pt -120 160)
-	(pt -120 288)
-	(bus)
-)
-(connector
-	(pt 64 448)
-	(pt 24 448)
-	(bus)
-)
-(connector
-	(pt 24 448)
-	(pt 24 352)
-	(bus)
-)
-(connector
-	(pt 24 352)
-	(pt -40 352)
-	(bus)
-)
-(connector
-	(text "lead[3..0],RAM_OUT[11..0]" (rect -56 276 -43 401)(font "Intel Clear" )(vertical))
-	(pt -40 304)
-	(pt -40 352)
-	(bus)
-)
-(connector
-	(pt -40 352)
-	(pt -40 392)
-	(bus)
-)
-(connector
-	(pt 1104 -408)
-	(pt 1104 -376)
-)
-(connector
-	(pt 1104 -376)
-	(pt 1104 -224)
-)
-(connector
-	(pt 1104 -376)
-	(pt 1360 -376)
-)
-(connector
-	(pt 400 -64)
-	(pt 400 -488)
-	(bus)
-)
-(connector
-	(pt 352 -784)
-	(pt 352 -520)
-)
-(connector
-	(pt 320 -848)
-	(pt 320 -408)
-)
-(connector
-	(text "stupidpc[11..0]" (rect 594 -488 669 -475)(font "Intel Clear" ))
-	(pt 584 -472)
-	(pt 696 -472)
-	(bus)
-)
-(connector
-	(pt 696 -472)
-	(pt 944 -472)
-	(bus)
-)
-(connector
-	(pt 264 -440)
-	(pt 264 -120)
-)
-(connector
-	(pt 264 -120)
-	(pt 264 8)
-)
-(connector
-	(pt 264 -440)
-	(pt 448 -440)
-)
-(connector
-	(pt 320 -408)
+(symbol
+	(rect 704 480 880 624)
+	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
+	(text "IR" (rect 3 133 13 146)(font "Intel Clear" ))
+	(port
+		(pt 88 144)
+		(input)
+		(text "aclr" (rect 80 113 101 126)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 80 113 101 126)(font "Arial" (font_size 8)))
+		(line (pt 88 144)(pt 88 128))
+		(unused)
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "aload" (rect 20 17 50 30)(font "Arial" (font_size 8)))
+		(text "aload" (rect 20 17 50 30)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24))
+		(unused)
+	)
+	(port
+		(pt 88 0)
+		(input)
+		(text "aset" (rect 79 17 102 30)(font "Arial" (font_size 8)))
+		(text "aset" (rect 79 17 102 30)(font "Arial" (font_size 8)))
+		(line (pt 88 16)(pt 88 0))
+		(unused)
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "clock" (rect 20 81 48 94)(font "Arial" (font_size 8))(invisible))
+		(text "clock" (rect 20 81 48 94)(font "Arial" (font_size 8))(invisible))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "data[LPM_WIDTH-1..0]" (rect 20 63 152 76)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 20 63 51 76)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 3))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "enable" (rect 20 97 60 110)(font "Arial" (font_size 8)))
+		(text "enable" (rect 20 97 60 110)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104))
+		(unused)
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "sclr" (rect 20 113 38 126)(font "Arial" (font_size 8)))
+		(text "sclr" (rect 20 113 38 126)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 16 120))
+		(unused)
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "sload" (rect 20 49 48 62)(font "Arial" (font_size 8)))
+		(text "sload" (rect 20 49 48 62)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "sset" (rect 20 33 41 46)(font "Arial" (font_size 8)))
+		(text "sset" (rect 20 33 41 46)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+		(unused)
+	)
+	(port
+		(pt 176 88)
+		(output)
+		(text "q[LPM_WIDTH-1..0]" (rect 144 81 258 94)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 94)(font "Arial" (font_size 8)))
+		(line (pt 160 88)(pt 176 88)(line_width 3))
+	)
+	(parameter
+		"LPM_AVALUE"
+		""
+		"Unsigned value associated with the aset port"
+	)
+	(parameter
+		"LPM_FFTYPE"
+		""
+		"Selects behavior as DFF or TFF"
+		"\"DFF\"" "\"TFF\"" 
+	)
+	(parameter
+		"LPM_SVALUE"
+		""
+		"Unsigned value associated with the sset port"
+	)
+	(parameter
+		"LPM_WIDTH"
+		"16"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(line (pt 16 16)(pt 160 16))
+		(line (pt 16 128)(pt 160 128))
+		(line (pt 160 128)(pt 160 16))
+		(line (pt 16 128)(pt 16 16))
+		(line (pt 16 80)(pt 24 88))
+		(line (pt 24 88)(pt 16 96))
+	)
+	(annotation_block (parameter)(rect 704 640 844 715))
+)
+(connector
+	(text "ctrl_count_enable" (rect 360 -424 449 -411)(font "Intel Clear" ))
 	(pt 448 -408)
+	(pt 408 -408)
 )
 (connector
-	(pt 400 -488)
-	(pt 448 -488)
-	(bus)
-)
-(connector
-	(pt 352 -520)
+	(text "ctrl_pc_sload" (rect 360 -536 428 -523)(font "Intel Clear" ))
+	(pt 408 -520)
 	(pt 448 -520)
 )
 (connector
-	(pt -56 160)
-	(pt -56 192)
+	(text "CLK" (rect 418 -456 438 -443)(font "Intel Clear" ))
+	(pt 408 -440)
+	(pt 448 -440)
+)
+(connector
+	(pt 448 -488)
+	(pt 216 -488)
 	(bus)
 )
 (connector
-	(pt -64 104)
-	(pt -64 96)
-)
-(connector
-	(pt -80 184)
-	(pt -80 96)
-)
-(connector
-	(pt -32 128)
-	(pt -32 96)
-)
-(connector
-	(pt -48 160)
-	(pt -48 96)
+	(pt 464 -240)
+	(pt 488 -240)
 	(bus)
 )
 (connector
-	(pt 264 8)
-	(pt 264 128)
-)
-(connector
-	(pt 264 128)
-	(pt 264 328)
-)
-(connector
-	(pt -56 160)
-	(pt -48 160)
+	(pt 488 -240)
+	(pt 488 -216)
 	(bus)
 )
 (connector
-	(pt -368 512)
-	(pt -184 512)
+	(pt 488 -216)
+	(pt 512 -216)
 	(bus)
 )
 (connector
-	(pt 232 -440)
-	(pt 232 -40)
+	(pt 1304 -360)
+	(pt 1304 -256)
+)
+(connector
+	(pt 1304 -256)
+	(pt 1264 -256)
+)
+(connector
+	(text "ACC_OUT[15..0]" (rect 928 -208 1003 -195)(font "Intel Clear" ))
+	(pt 1032 -192)
+	(pt 976 -192)
 	(bus)
 )
 (connector
-	(pt -368 -440)
-	(pt -368 512)
+	(pt 976 -240)
+	(pt 1032 -240)
+)
+(connector
+	(pt 976 -288)
+	(pt 976 -240)
+)
+(connector
+	(pt 464 -256)
+	(pt 1032 -256)
+)
+(connector
+	(pt 464 -272)
+	(pt 960 -272)
+)
+(connector
+	(pt 1032 -224)
+	(pt 960 -224)
+)
+(connector
+	(pt 960 -272)
+	(pt 960 -224)
+)
+(connector
+	(pt 648 -216)
+	(pt 664 -216)
 	(bus)
 )
 (connector
-	(pt -56 -248)
-	(pt -56 -40)
+	(pt 664 -216)
+	(pt 664 -136)
 	(bus)
 )
 (connector
-	(pt -88 -248)
-	(pt -88 -88)
+	(pt 296 -288)
+	(pt 280 -288)
 	(bus)
 )
 (connector
-	(pt -208 -88)
-	(pt -208 -48)
+	(pt 280 -288)
+	(pt 280 -136)
 	(bus)
 )
 (connector
-	(pt -208 -88)
-	(pt -88 -88)
+	(pt 664 -136)
+	(pt 280 -136)
 	(bus)
 )
 (connector
-	(pt 1200 160)
-	(pt -16 160)
+	(text "CLK" (rect 490 -208 510 -195)(font "Intel Clear" ))
+	(pt 512 -200)
+	(pt 480 -200)
 )
 (connector
-	(pt -168 88)
-	(pt -168 112)
+	(pt 1328 -416)
+	(pt 1008 -416)
 )
 (connector
-	(pt -168 112)
-	(pt -16 112)
+	(pt 1328 -240)
+	(pt 1328 -416)
 )
 (connector
-	(pt -16 96)
-	(pt -16 112)
-)
-(connector
-	(pt -16 112)
-	(pt -16 160)
-)
-(connector
-	(pt -184 88)
-	(pt -184 128)
-)
-(connector
-	(pt -184 128)
-	(pt -32 128)
-)
-(connector
-	(pt -32 128)
-	(pt 264 128)
-)
-(connector
-	(pt -200 88)
-	(pt -200 160)
+	(pt 592 552)
+	(pt 592 456)
 	(bus)
 )
 (connector
-	(pt -200 160)
-	(pt -120 160)
+	(pt 688 248)
+	(pt 688 536)
+)
+(connector
+	(pt 688 536)
+	(pt 704 536)
+)
+(connector
+	(text "CLK" (rect 666 552 686 565)(font "Intel Clear" ))
+	(pt 704 568)
+	(pt 656 568)
+)
+(connector
+	(pt 776 456)
+	(pt 776 400)
 	(bus)
 )
 (connector
-	(pt -120 160)
-	(pt -56 160)
+	(pt 592 456)
+	(pt 776 456)
 	(bus)
 )
 (connector
-	(pt -216 88)
-	(pt -216 104)
-)
-(connector
-	(pt -216 104)
-	(pt -64 104)
-)
-(connector
-	(pt -64 104)
-	(pt 40 104)
-)
-(connector
-	(pt -232 88)
-	(pt -232 184)
-)
-(connector
-	(pt -232 184)
-	(pt -80 184)
-)
-(connector
-	(pt -80 184)
-	(pt 1216 184)
-)
-(connector
-	(text "h[15..0]" (rect -366 -456 -330 -443)(font "Intel Clear" ))
-	(pt -368 -440)
-	(pt -72 -440)
+	(pt 880 568)
+	(pt 904 568)
 	(bus)
 )
 (connector
-	(text "h[15..0]" (rect -70 -456 -34 -443)(font "Intel Clear" ))
-	(pt -72 -440)
-	(pt 232 -440)
+	(pt 808 456)
+	(pt 904 456)
 	(bus)
 )
 (connector
-	(text "h[15..0]" (rect -88 -393 -75 -357)(font "Intel Clear" )(vertical))
-	(pt -72 -408)
-	(pt -72 -440)
+	(pt 808 400)
+	(pt 808 456)
 	(bus)
 )
 (connector
-	(text "k[15..12]" (rect 840 -39 853 4)(font "Intel Clear" )(vertical))
-	(pt 856 -152)
-	(pt 856 0)
+	(pt 904 568)
+	(pt 904 456)
 	(bus)
 )
 (connector
-	(pt 1272 -96)
-	(pt 1072 -96)
+	(pt 832 344)
+	(pt 880 344)
 )
 (connector
-	(pt 1272 -96)
-	(pt 1272 568)
+	(pt 880 248)
+	(pt 880 344)
 )
 (connector
-	(pt 1272 568)
-	(pt 1272 592)
+	(pt 888 -288)
+	(pt 888 248)
 )
 (connector
-	(pt 1200 -112)
-	(pt 1072 -112)
+	(pt 464 -288)
+	(pt 888 -288)
 )
 (connector
-	(pt 1200 160)
-	(pt 1200 -112)
+	(pt 888 -288)
+	(pt 976 -288)
 )
 (connector
-	(pt 1216 184)
-	(pt 1216 -128)
+	(pt 688 248)
+	(pt 880 248)
 )
 (connector
-	(pt 1216 -128)
-	(pt 1072 -128)
+	(pt 880 248)
+	(pt 888 248)
 )
 (connector
-	(pt 1072 -144)
-	(pt 1088 -144)
-)
-(connector
-	(pt 1072 -160)
-	(pt 1128 -160)
-)
-(connector
-	(pt 1240 -848)
-	(pt 1240 -176)
-)
-(connector
-	(pt 1240 -176)
-	(pt 1072 -176)
-)
-(connector
-	(pt 1072 -192)
-	(pt 1192 -192)
-)
-(connector
-	(pt 1072 -208)
-	(pt 1376 -208)
-)
-(connector
-	(pt 1072 -224)
-	(pt 1104 -224)
-)
-(connector
-	(pt 1072 -240)
-	(pt 1088 -240)
-)
-(connector
-	(pt 832 -424)
-	(pt 792 -424)
+	(pt 592 552)
+	(pt 704 552)
 	(bus)
 )
 (connector
-	(text "k[11..0]" (rect 776 -96 789 -61)(font "Intel Clear" )(vertical))
-	(pt 792 -64)
-	(pt 792 -424)
+	(text "k[15..0]" (rect 800 315 835 328)(font "Intel Clear" ))
+	(pt 792 288)
+	(pt 792 112)
 	(bus)
 )
 (connector
-	(text "k[11..0]" (rect 410 -80 445 -67)(font "Intel Clear" ))
-	(pt 400 -64)
-	(pt 792 -64)
+	(pt 736 112)
+	(pt 792 112)
 	(bus)
 )
 (connector
-	(pt 792 -64)
-	(pt 824 -64)
+	(pt 792 112)
+	(pt 848 112)
 	(bus)
 )
 (connector
-	(pt 800 -288)
-	(pt 800 -224)
-)
-(connector
-	(pt 800 -224)
-	(pt 800 40)
-)
-(connector
-	(pt 624 -272)
-	(pt 824 -272)
-)
-(connector
-	(pt 856 -152)
-	(pt 824 -152)
+	(pt 1032 -208)
+	(pt 848 -208)
 	(bus)
 )
 (connector
-	(pt 824 -152)
-	(pt 824 -192)
+	(text "k[15..12]" (rect 832 1 845 44)(font "Intel Clear" )(vertical))
+	(pt 848 -208)
+	(pt 848 112)
 	(bus)
 )
 (connector
-	(pt 824 -192)
-	(pt 840 -192)
+	(pt 952 -440)
+	(pt 736 -440)
 	(bus)
 )
 (connector
-	(pt 800 -224)
-	(pt 840 -224)
-)
-(connector
-	(pt 824 -272)
-	(pt 824 -208)
-)
-(connector
-	(pt 824 -208)
-	(pt 840 -208)
-)
-(connector
-	(pt 840 -240)
-	(pt 832 -240)
-)
-(connector
-	(pt 624 -256)
-	(pt 632 -256)
-)
-(connector
-	(pt 632 -256)
-	(pt 632 -264)
-)
-(connector
-	(pt 632 -264)
-	(pt 776 -264)
-)
-(connector
-	(pt 776 -264)
-	(pt 776 -248)
-)
-(connector
-	(pt 776 -248)
-	(pt 832 -248)
-)
-(connector
-	(pt 832 -240)
-	(pt 832 -248)
-)
-(connector
-	(pt 1144 -40)
-	(pt 808 -40)
+	(pt 216 -488)
+	(pt 216 -88)
 	(bus)
 )
 (connector
-	(text "<<__$DEF_ALIAS918>>" (rect 770 -56 891 -43)(font "Intel Clear" )(invisible))
-	(pt 808 -40)
-	(pt 232 -40)
+	(pt 216 -88)
+	(pt 736 -88)
 	(bus)
 )
 (connector
-	(text "H[15..0]" (rect 792 -74 805 -37)(font "Intel Clear" )(vertical))
-	(pt 808 -40)
-	(pt 808 -176)
+	(pt 736 -440)
+	(pt 736 -88)
 	(bus)
 )
 (connector
-	(pt 808 -176)
-	(pt 840 -176)
+	(text "k[11..0]" (rect 720 8 733 43)(font "Intel Clear" )(vertical))
+	(pt 736 -88)
+	(pt 736 112)
 	(bus)
 )
 (connector
-	(pt -72 -248)
-	(pt -56 -248)
+	(pt 1304 -360)
+	(pt 256 -360)
+)
+(connector
+	(pt 256 -360)
+	(pt 256 -272)
+)
+(connector
+	(pt 296 -272)
+	(pt 256 -272)
+)
+(connector
+	(text "PC_OUT[11..0]" (rect 594 -488 663 -475)(font "Intel Clear" ))
+	(pt 584 -472)
+	(pt 952 -472)
 	(bus)
 )
 (connector
-	(pt -72 -408)
-	(pt -72 -248)
+	(text "ctrl_shift" (rect 1272 -160 1319 -147)(font "Intel Clear" ))
+	(pt 1296 -144)
+	(pt 1264 -144)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_load_acc" (rect 1272 -176 1338 -163)(font "Intel Clear" ))
+	(pt 1296 -160)
+	(pt 1264 -160)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_mux3" (rect 1272 -240 1325 -227)(font "Intel Clear" ))
+	(pt 1264 -224)
+	(pt 1296 -224)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_enable_acc" (rect 1272 -144 1348 -131)(font "Intel Clear" ))
+	(pt 1264 -128)
+	(pt 1296 -128)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_add_sub" (rect 1272 -128 1340 -115)(font "Intel Clear" ))
+	(pt 1264 -112)
+	(pt 1296 -112)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_ram_write_enable" (rect 1272 -192 1385 -179)(font "Intel Clear" ))
+	(pt 1264 -176)
+	(pt 1296 -176)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_pc_sload" (rect 1272 -224 1340 -211)(font "Intel Clear" ))
+	(pt 1264 -208)
+	(pt 1296 -208)
+	(color 0 170 0)
+)
+(connector
+	(pt 1328 -240)
+	(pt 1264 -240)
+	(color 128 0 128)
+)
+(connector
+	(text "RAM_ADDRESS_IN[11..0]" (rect 1074 -472 1197 -459)(font "Intel Clear" ))
+	(pt 1064 -456)
+	(pt 1176 -456)
+	(bus)
+	(color 0 170 0)
+)
+(connector
+	(text "RAM_OUT[15..0]" (rect 506 536 586 549)(font "Intel Clear" ))
+	(pt 512 552)
+	(pt 592 552)
+	(bus)
+	(color 0 170 0)
+)
+(connector
+	(pt -760 128)
+	(pt -760 104)
 	(bus)
 )
-(junction (pt 512 312))
-(junction (pt 264 328))
-(junction (pt 848 0))
-(junction (pt 264 8))
-(junction (pt 800 40))
-(junction (pt 1144 480))
-(junction (pt 696 -472))
-(junction (pt 320 488))
-(junction (pt -40 488))
-(junction (pt -40 392))
-(junction (pt 264 128))
-(junction (pt 1272 568))
-(junction (pt 800 -224))
-(junction (pt 624 -240))
-(junction (pt 264 -120))
-(junction (pt -56 160))
-(junction (pt -40 352))
-(junction (pt 1104 -376))
-(junction (pt -72 -440))
-(junction (pt -16 112))
-(junction (pt -32 128))
-(junction (pt -120 160))
-(junction (pt -64 104))
-(junction (pt -80 184))
-(junction (pt -72 -408))
-(junction (pt 792 -64))
-(junction (pt 808 -40))
+(connector
+	(pt -760 104)
+	(pt -672 104)
+	(bus)
+)
+(connector
+	(pt -672 104)
+	(pt -672 96)
+	(bus)
+)
+(connector
+	(pt -736 312)
+	(pt -736 288)
+	(bus)
+)
+(connector
+	(pt -720 80)
+	(pt -520 80)
+	(bus)
+)
+(connector
+	(pt -720 -48)
+	(pt -720 80)
+	(bus)
+)
+(connector
+	(pt -656 -48)
+	(pt -656 -16)
+	(bus)
+)
+(connector
+	(pt -648 -48)
+	(pt -648 -112)
+	(bus)
+)
+(connector
+	(text "lead[3..0]" (rect -638 160 -595 173)(font "Intel Clear" ))
+	(pt -640 176)
+	(pt -592 176)
+	(bus)
+)
+(connector
+	(text "CLK" (rect -648 -107 -635 -87)(font "Intel Clear" )(vertical))
+	(pt -632 -80)
+	(pt -632 -112)
+)
+(connector
+	(text "ctrl_shift" (rect -696 -111 -683 -64)(font "Intel Clear" )(vertical))
+	(pt -680 -80)
+	(pt -680 -112)
+)
+(connector
+	(text "ctrl_load_acc" (rect -680 -114 -667 -48)(font "Intel Clear" )(vertical))
+	(pt -664 -112)
+	(pt -664 -80)
+)
+(connector
+	(text "ctrl_mux3" (rect -608 24 -555 37)(font "Intel Clear" ))
+	(pt -616 40)
+	(pt -584 40)
+)
+(connector
+	(text "ctrl_enable_acc" (rect -632 -115 -619 -39)(font "Intel Clear" )(vertical))
+	(pt -616 -112)
+	(pt -616 -80)
+)
+(connector
+	(text "ctrl_add_sub" (rect -840 292 -827 360)(font "Intel Clear" )(vertical))
+	(pt -824 328)
+	(pt -824 288)
+)
+(connector
+	(pt -784 288)
+	(pt -784 392)
+	(bus)
+)
+(connector
+	(pt -656 -288)
+	(pt -656 -248)
+	(bus)
+)
+(connector
+	(pt -784 392)
+	(pt -888 392)
+	(bus)
+)
+(connector
+	(pt -888 392)
+	(pt -888 -288)
+	(bus)
+)
+(connector
+	(pt -720 -48)
+	(pt -656 -48)
+	(bus)
+)
+(connector
+	(pt -656 -48)
+	(pt -648 -48)
+	(bus)
+)
+(connector
+	(text "RAM_OUT[11..0],lead[3..0],RAM_OUT[11..0]" (rect -656 114 -450 127)(font "Intel Clear" ))
+	(pt -640 96)
+	(pt -640 176)
+	(bus)
+)
+(connector
+	(pt -640 176)
+	(pt -640 312)
+	(bus)
+)
+(connector
+	(pt -736 312)
+	(pt -640 312)
+	(bus)
+	(color 0 170 0)
+)
+(connector
+	(text "RAM_OUT[15..0]" (rect -622 296 -542 309)(font "Intel Clear" ))
+	(pt -640 312)
+	(pt -584 312)
+	(bus)
+	(color 0 170 0)
+)
+(connector
+	(pt -888 -288)
+	(pt -656 -288)
+	(bus)
+	(color 0 170 0)
+)
+(connector
+	(text "ACC_OUT[15..0]" (rect -630 -304 -555 -291)(font "Intel Clear" ))
+	(pt -656 -288)
+	(pt -584 -288)
+	(bus)
+	(color 0 170 0)
+)
+(connector
+	(text "CLK" (rect 2008 -219 2021 -199)(font "Intel Clear" )(vertical))
+	(pt 2024 -232)
+	(pt 2024 -168)
+)
+(connector
+	(text "RAM_OUT[15..0]" (rect 2077 47 2090 127)(font "Intel Clear" )(vertical))
+	(pt 2104 48)
+	(pt 2104 96)
+	(bus)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_ram_write_enable" (rect 2072 -298 2085 -185)(font "Intel Clear" )(vertical))
+	(pt 2088 -168)
+	(pt 2088 -232)
+	(color 0 170 0)
+)
+(connector
+	(text "RAM_ADDRESS_IN[11..0]" (rect 2056 -307 2069 -184)(font "Intel Clear" )(vertical))
+	(pt 2072 -232)
+	(pt 2072 -168)
+	(bus)
+	(color 0 170 0)
+)
+(connector
+	(text "ACC_OUT[15..0]" (rect 2088 -266 2101 -191)(font "Intel Clear" )(vertical))
+	(pt 2104 -168)
+	(pt 2104 -232)
+	(bus)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_count_enable" (rect 1272 -208 1361 -195)(font "Intel Clear" (color 128 0 128)))
+	(pt 1296 -192)
+	(pt 1264 -192)
+	(color 128 0 128)
+)
+(connector
+	(text "RAM_OUT[15..0]" (rect -1120 960 -1040 973)(font "Intel Clear" ))
+	(pt -976 968)
+	(pt -1040 968)
+	(bus)
+)
+(connector
+	(text "RAM_ADDRESS_IN[11..0]" (rect -1160 1008 -1037 1021)(font "Intel Clear" ))
+	(pt -1040 1016)
+	(pt -976 1016)
+	(bus)
+)
+(connector
+	(text "ACC_OUT[15..0]" (rect -1160 1056 -1085 1069)(font "Intel Clear" ))
+	(pt -976 1064)
+	(pt -1040 1064)
+	(bus)
+)
+(connector
+	(text "CLK" (rect -814 864 -794 877)(font "Intel Clear" ))
+	(pt -840 880)
+	(pt -800 880)
+)
+(junction (pt 592 552))
+(junction (pt 888 -288))
+(junction (pt 880 248))
+(junction (pt 792 112))
+(junction (pt 736 -88))
+(junction (pt -656 -48))
+(junction (pt -640 176))
+(junction (pt -640 312))
+(junction (pt -656 -288))
+(text "CONROL PATH" (rect 152 -848 535 -789)(font "Bitstream Charter" (color 0 0 0)(font_size 36)))
+(text "DATA PATH" (rect -1224 -544 -919 -485)(font "Bitstream Charter" (color 0 0 0)(font_size 36)))
+(text "MEMORY" (rect 1904 -512 2148 -453)(font "Bitstream Charter" (color 0 0 0)(font_size 36)))
+(text "SYSTEM I/O" (rect -1200 752 -884 811)(font "Bitstream Charter" (color 0 0 0)(font_size 36)))
+(text "DE-BUGGING TEST POINTS" (rect -1152 912 -761 945)(font "Bitstream Charter" (color 0 0 0)(font_size 20)))
+(rectangle (rect -1288 680 -688 1528))
