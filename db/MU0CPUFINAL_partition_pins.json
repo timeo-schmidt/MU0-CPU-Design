@@ -72,6 +72,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "ctrl_mux3",
+					"strict" : false
+				},
+				{
 					"name" : "RAM_OUT[15]",
 					"strict" : false
 				},
@@ -232,6 +236,70 @@
 					"strict" : false
 				},
 				{
+					"name" : "k[15]",
+					"strict" : false
+				},
+				{
+					"name" : "k[14]",
+					"strict" : false
+				},
+				{
+					"name" : "k[13]",
+					"strict" : false
+				},
+				{
+					"name" : "k[12]",
+					"strict" : false
+				},
+				{
+					"name" : "k[11]",
+					"strict" : false
+				},
+				{
+					"name" : "k[10]",
+					"strict" : false
+				},
+				{
+					"name" : "k[9]",
+					"strict" : false
+				},
+				{
+					"name" : "k[8]",
+					"strict" : false
+				},
+				{
+					"name" : "k[7]",
+					"strict" : false
+				},
+				{
+					"name" : "k[6]",
+					"strict" : false
+				},
+				{
+					"name" : "k[5]",
+					"strict" : false
+				},
+				{
+					"name" : "k[4]",
+					"strict" : false
+				},
+				{
+					"name" : "k[3]",
+					"strict" : false
+				},
+				{
+					"name" : "k[2]",
+					"strict" : false
+				},
+				{
+					"name" : "k[1]",
+					"strict" : false
+				},
+				{
+					"name" : "k[0]",
+					"strict" : false
+				},
+				{
 					"name" : "FETCH",
 					"strict" : false
 				},
@@ -241,70 +309,6 @@
 				},
 				{
 					"name" : "EXEC1",
-					"strict" : false
-				},
-				{
-					"name" : "accum[15]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[14]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[13]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[12]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[11]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[10]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[9]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[8]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[7]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[6]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[5]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[4]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[3]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[2]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[1]",
-					"strict" : false
-				},
-				{
-					"name" : "accum[0]",
 					"strict" : false
 				},
 				{
@@ -369,6 +373,70 @@
 				},
 				{
 					"name" : "MERGED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RESULT[0]",
 					"strict" : false
 				},
 				{
