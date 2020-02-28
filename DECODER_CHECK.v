@@ -44,7 +44,7 @@ module DECODER_CHECK
 	assign WREN = STA&EXEC1;
 	assign SLOAD_ACC = (LDI)&EXEC1 | (SUB|ADD|LDA)&EXEC2;
 	assign add_sub = ADD;
-	assign shift = (LSR|LSL)&EXEC1;
+	assign shift = 0;
 	assign enable_acc = (LDI|LSL|LSR)&EXEC1 | (SUB|ADD|LDA)&EXEC2;
 	assign mux4 = EXEC1&LSR;
 	

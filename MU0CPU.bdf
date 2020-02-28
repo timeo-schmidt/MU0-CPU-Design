@@ -696,7 +696,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1032 -288 1264 -48)
+	(rect 1024 -296 1256 -56)
 	(text "DECODER_CHECK" (rect 5 0 106 11)(font "Arial" ))
 	(text "inst" (rect 8 224 26 235)(font "Arial" ))
 	(port
@@ -1241,36 +1241,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1304 -360)
-	(pt 1304 -256)
-)
-(connector
-	(pt 1304 -256)
-	(pt 1264 -256)
-)
-(connector
-	(text "ACC_OUT[15..0]" (rect 928 -208 1003 -195)(font "Intel Clear" ))
-	(pt 1032 -192)
-	(pt 976 -192)
-	(bus)
-)
-(connector
-	(pt 976 -240)
-	(pt 1032 -240)
-)
-(connector
-	(pt 976 -288)
-	(pt 976 -240)
-)
-(connector
-	(pt 1032 -224)
-	(pt 960 -224)
-)
-(connector
-	(pt 960 -272)
-	(pt 960 -224)
-)
-(connector
 	(pt 648 -216)
 	(pt 664 -216)
 	(bus)
@@ -1366,17 +1336,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1032 -208)
-	(pt 848 -208)
-	(bus)
-)
-(connector
-	(text "k[15..12]" (rect 832 1 845 44)(font "Intel Clear" )(vertical))
-	(pt 848 -208)
-	(pt 848 112)
-	(bus)
-)
-(connector
 	(pt 952 -440)
 	(pt 736 -440)
 	(bus)
@@ -1419,47 +1378,6 @@ refer to the applicable agreement for further details.
 	(pt 584 -472)
 	(pt 952 -472)
 	(bus)
-)
-(connector
-	(text "ctrl_shift" (rect 1272 -160 1319 -147)(font "Intel Clear" ))
-	(pt 1296 -144)
-	(pt 1264 -144)
-	(color 0 170 0)
-)
-(connector
-	(text "ctrl_load_acc" (rect 1272 -176 1338 -163)(font "Intel Clear" ))
-	(pt 1296 -160)
-	(pt 1264 -160)
-	(color 0 170 0)
-)
-(connector
-	(text "ctrl_mux3" (rect 1272 -240 1325 -227)(font "Intel Clear" ))
-	(pt 1264 -224)
-	(pt 1296 -224)
-	(color 0 170 0)
-)
-(connector
-	(text "ctrl_add_sub" (rect 1272 -128 1340 -115)(font "Intel Clear" ))
-	(pt 1264 -112)
-	(pt 1296 -112)
-	(color 0 170 0)
-)
-(connector
-	(text "ctrl_ram_write_enable" (rect 1272 -192 1385 -179)(font "Intel Clear" ))
-	(pt 1264 -176)
-	(pt 1296 -176)
-	(color 0 170 0)
-)
-(connector
-	(text "ctrl_pc_sload" (rect 1272 -224 1340 -211)(font "Intel Clear" ))
-	(pt 1264 -208)
-	(pt 1296 -208)
-	(color 0 170 0)
-)
-(connector
-	(pt 1328 -240)
-	(pt 1264 -240)
-	(color 128 0 128)
 )
 (connector
 	(text "RAM_ADDRESS_IN[11..0]" (rect 1074 -472 1197 -459)(font "Intel Clear" ))
@@ -1630,11 +1548,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ctrl_enable_acc" (rect 1272 -144 1348 -131)(font "Intel Clear" ))
-	(pt 1264 -128)
-	(pt 1296 -128)
-)
-(connector
 	(pt -976 1064)
 	(pt -1040 1064)
 	(bus)
@@ -1642,14 +1555,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1328 -416)
 	(pt 1008 -416)
-)
-(connector
-	(pt 1328 -240)
-	(pt 1328 -352)
-)
-(connector
-	(pt 1328 -352)
-	(pt 1328 -416)
 )
 (connector
 	(pt 800 -272)
@@ -1697,15 +1602,6 @@ refer to the applicable agreement for further details.
 	(pt -976 1104)
 	(pt -1040 1104)
 	(bus)
-)
-(connector
-	(pt 1512 -192)
-	(pt 1512 -768)
-)
-(connector
-	(text "ctrl_count_enable" (rect 1272 -208 1361 -195)(font "Intel Clear" (color 128 0 128)))
-	(pt 1264 -192)
-	(pt 1512 -192)
 )
 (connector
 	(pt 1512 -768)
@@ -1786,16 +1682,124 @@ refer to the applicable agreement for further details.
 	(pt 832 -312)
 )
 (connector
-	(pt 832 -312)
-	(pt 832 -256)
-)
-(connector
-	(pt 1032 -256)
-	(pt 832 -256)
-)
-(connector
 	(pt 832 -256)
 	(pt 464 -256)
+)
+(connector
+	(pt 1304 -360)
+	(pt 1304 -264)
+)
+(connector
+	(pt 1304 -264)
+	(pt 1256 -264)
+)
+(connector
+	(text "ACC_OUT[15..0]" (rect 920 -216 995 -203)(font "Intel Clear" ))
+	(pt 1024 -200)
+	(pt 968 -200)
+	(bus)
+)
+(connector
+	(pt 976 -248)
+	(pt 1024 -248)
+)
+(connector
+	(pt 976 -288)
+	(pt 976 -248)
+)
+(connector
+	(pt 960 -232)
+	(pt 1024 -232)
+)
+(connector
+	(pt 960 -272)
+	(pt 960 -232)
+)
+(connector
+	(pt 848 -216)
+	(pt 1024 -216)
+	(bus)
+)
+(connector
+	(text "k[15..12]" (rect 832 1 845 44)(font "Intel Clear" )(vertical))
+	(pt 848 112)
+	(pt 848 -216)
+	(bus)
+)
+(connector
+	(text "ctrl_shift" (rect 1264 -168 1311 -155)(font "Intel Clear" ))
+	(pt 1288 -152)
+	(pt 1256 -152)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_load_acc" (rect 1264 -184 1330 -171)(font "Intel Clear" ))
+	(pt 1288 -168)
+	(pt 1256 -168)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_mux3" (rect 1264 -248 1317 -235)(font "Intel Clear" ))
+	(pt 1256 -232)
+	(pt 1288 -232)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_add_sub" (rect 1264 -136 1332 -123)(font "Intel Clear" ))
+	(pt 1256 -120)
+	(pt 1288 -120)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_ram_write_enable" (rect 1264 -200 1377 -187)(font "Intel Clear" ))
+	(pt 1256 -184)
+	(pt 1288 -184)
+	(color 0 170 0)
+)
+(connector
+	(text "ctrl_pc_sload" (rect 1264 -232 1332 -219)(font "Intel Clear" ))
+	(pt 1256 -216)
+	(pt 1288 -216)
+	(color 0 170 0)
+)
+(connector
+	(pt 1328 -248)
+	(pt 1256 -248)
+	(color 128 0 128)
+)
+(connector
+	(text "ctrl_enable_acc" (rect 1264 -152 1340 -139)(font "Intel Clear" ))
+	(pt 1256 -136)
+	(pt 1288 -136)
+)
+(connector
+	(pt 1512 -768)
+	(pt 1512 -200)
+)
+(connector
+	(text "ctrl_count_enable" (rect 1264 -216 1353 -203)(font "Intel Clear" (color 128 0 128)))
+	(pt 1512 -200)
+	(pt 1256 -200)
+)
+(connector
+	(pt 832 -264)
+	(pt 1024 -264)
+)
+(connector
+	(pt 1328 -416)
+	(pt 1328 -352)
+)
+(connector
+	(pt 1328 -352)
+	(pt 1328 -248)
+)
+(connector
+	(pt 832 -312)
+	(pt 832 -264)
+)
+(connector
+	(pt 832 -264)
+	(pt 832 -256)
 )
 (junction (pt 592 552))
 (junction (pt 792 112))
@@ -1810,7 +1814,7 @@ refer to the applicable agreement for further details.
 (junction (pt -760 104))
 (junction (pt 688 -288))
 (junction (pt 688 344))
-(junction (pt 832 -256))
+(junction (pt 832 -264))
 (text "CONROL PATH" (rect 152 -848 535 -789)(font "Bitstream Charter" (color 0 0 0)(font_size 36)))
 (text "DATA PATH" (rect -1224 -544 -919 -485)(font "Bitstream Charter" (color 0 0 0)(font_size 36)))
 (text "MEMORY" (rect 1904 -512 2148 -453)(font "Bitstream Charter" (color 0 0 0)(font_size 36)))
