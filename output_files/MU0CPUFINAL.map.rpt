@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MU0CPUFINAL
-Fri Feb 28 11:02:34 2020
+Mon Mar  2 12:50:11 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -57,7 +57,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Feb 28 11:02:34 2020           ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar  2 12:50:11 2020           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; MU0CPUFINAL                                     ;
 ; Top-level Entity Name           ; MU0CPU                                          ;
@@ -235,14 +235,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 61        ;
+; Estimate of Logic utilization (ALMs needed) ; 75        ;
 ;                                             ;           ;
 ; Combinational ALUT usage for logic          ; 98        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 8         ;
-;     -- 5 input functions                    ; 18        ;
-;     -- 4 input functions                    ; 22        ;
-;     -- <=3 input functions                  ; 50        ;
+;     -- 6 input functions                    ; 20        ;
+;     -- 5 input functions                    ; 6         ;
+;     -- 4 input functions                    ; 21        ;
+;     -- <=3 input functions                  ; 51        ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 46        ;
 ;                                             ;           ;
@@ -254,8 +254,8 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 62        ;
-; Total fan-out                               ; 1017      ;
-; Average fan-out                             ; 2.68      ;
+; Total fan-out                               ; 1030      ;
+; Average fan-out                             ; 2.71      ;
 +---------------------------------------------+-----------+
 
 
@@ -266,7 +266,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+------------------+--------------+
 ; |MU0CPU                                   ; 98 (0)              ; 46 (0)                    ; 65536             ; 0          ; 110  ; 0            ; |MU0CPU                                                                        ; MU0CPU           ; work         ;
 ;    |3_bit_register:register3|             ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|3_bit_register:register3                                               ; 3_bit_register   ; work         ;
-;    |DECODER_CHECK:inst|                   ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|DECODER_CHECK:inst                                                     ; DECODER_CHECK    ; work         ;
+;    |DECODER_CHECK:inst|                   ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|DECODER_CHECK:inst                                                     ; DECODER_CHECK    ; work         ;
 ;    |busmux:MUX1|                          ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX1                                                            ; busmux           ; work         ;
 ;       |lpm_mux:$00000|                    ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX1|lpm_mux:$00000                                             ; lpm_mux          ; work         ;
 ;          |mux_blc:auto_generated|         ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX1|lpm_mux:$00000|mux_blc:auto_generated                      ; mux_blc          ; work         ;
@@ -279,10 +279,10 @@ refer to the applicable agreement for further details.
 ;    |cpu_statemachine:inst3|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|cpu_statemachine:inst3                                                 ; cpu_statemachine ; work         ;
 ;    |lpm_add_sub:ALU2|                     ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_add_sub:ALU2                                                       ; lpm_add_sub      ; work         ;
 ;       |add_sub_i1b:auto_generated|        ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_add_sub:ALU2|add_sub_i1b:auto_generated                            ; add_sub_i1b      ; work         ;
-;    |lpm_counter:inst4|                    ; 15 (0)              ; 12 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_counter:inst4                                                      ; lpm_counter      ; work         ;
-;       |cntr_0gh:auto_generated|           ; 15 (15)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_counter:inst4|cntr_0gh:auto_generated                              ; cntr_0gh         ; work         ;
+;    |lpm_counter:inst4|                    ; 14 (0)              ; 12 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_counter:inst4                                                      ; lpm_counter      ; work         ;
+;       |cntr_0gh:auto_generated|           ; 14 (14)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_counter:inst4|cntr_0gh:auto_generated                              ; cntr_0gh         ; work         ;
 ;    |lpm_ff:IR|                            ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_ff:IR                                                              ; lpm_ff           ; work         ;
-;    |lpm_shiftreg:inst1|                   ; 1 (1)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_shiftreg:inst1                                                     ; lpm_shiftreg     ; work         ;
+;    |lpm_shiftreg:inst1|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_shiftreg:inst1                                                     ; lpm_shiftreg     ; work         ;
 ;    |ram:ram|                              ; 0 (0)               ; 0 (0)                     ; 65536             ; 0          ; 0    ; 0            ; |MU0CPU|ram:ram                                                                ; ram              ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 65536             ; 0          ; 0    ; 0            ; |MU0CPU|ram:ram|altsyncram:altsyncram_component                                ; altsyncram       ; work         ;
 ;          |altsyncram_skp1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 65536             ; 0          ; 0    ; 0            ; |MU0CPU|ram:ram|altsyncram:altsyncram_component|altsyncram_skp1:auto_generated ; altsyncram_skp1  ; work         ;
@@ -326,7 +326,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 46    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 43    ;
+; Number of registers using Synchronous Load   ; 44    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 28    ;
@@ -577,8 +577,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 46                          ;
-;     ENA               ; 1                           ;
-;     ENA SLD           ; 27                          ;
+;     ENA SLD           ; 28                          ;
 ;     SLD               ; 16                          ;
 ;     plain             ; 2                           ;
 ; arriav_lcell_comb     ; 99                          ;
@@ -588,15 +587,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 70                          ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 7                           ;
-;         3 data inputs ; 13                          ;
-;         4 data inputs ; 22                          ;
-;         5 data inputs ; 18                          ;
-;         6 data inputs ; 8                           ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 21                          ;
+;         5 data inputs ; 6                           ;
+;         6 data inputs ; 20                          ;
 ; boundary_port         ; 110                         ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.60                        ;
-; Average LUT depth     ; 3.52                        ;
+; Average LUT depth     ; 3.43                        ;
 +-----------------------+-----------------------------+
 
 
@@ -615,7 +614,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Fri Feb 28 11:02:23 2020
+    Info: Processing started: Mon Mar  2 12:50:01 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MU0CPUFINAL -c MU0CPUFINAL
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -725,9 +724,9 @@ Info (21057): Implemented 255 device resources after synthesis - the final resou
     Info (21061): Implemented 129 logic cells
     Info (21064): Implemented 16 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 1242 megabytes
-    Info: Processing ended: Fri Feb 28 11:02:34 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 1245 megabytes
+    Info: Processing ended: Mon Mar  2 12:50:11 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:28
 
 

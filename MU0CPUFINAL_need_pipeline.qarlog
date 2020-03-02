@@ -1,0 +1,64 @@
+Quartus Prime Archive log --	/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL_need_pipeline.qarlog
+
+Archive:	/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL_need_pipeline.qar
+Date:		Mon Mar  2 12:51:45 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/home/wz1119/nfshome/MU0CPUFINAL/3_bit_register.bdf
+/home/wz1119/nfshome/MU0CPUFINAL/DECODER_CHECK.v
+/home/wz1119/nfshome/MU0CPUFINAL/MU0CPU.bdf
+/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL.bdf
+/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL.mif
+/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL.qpf
+/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL.qsf
+/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL.tcl
+/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL_TASK10.mif
+/home/wz1119/nfshome/MU0CPUFINAL/Mif1.mif
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform1.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform10.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform11.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform12.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform13.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform14.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform15.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform16.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform17.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform18.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform19.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform2.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform20.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform3.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform4.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform5.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform6.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform7.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform8.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/Waveform9.vwf
+/home/wz1119/nfshome/MU0CPUFINAL/constant.bsf
+/home/wz1119/nfshome/MU0CPUFINAL/constant.qip
+/home/wz1119/nfshome/MU0CPUFINAL/constant.v
+/home/wz1119/nfshome/MU0CPUFINAL/constant_bb.v
+/home/wz1119/nfshome/MU0CPUFINAL/cpu_decoder.v
+/home/wz1119/nfshome/MU0CPUFINAL/cpu_statemachine.v
+/home/wz1119/nfshome/MU0CPUFINAL/ram.bsf
+/home/wz1119/nfshome/MU0CPUFINAL/ram.cmp
+/home/wz1119/nfshome/MU0CPUFINAL/ram.inc
+/home/wz1119/nfshome/MU0CPUFINAL/ram.qip
+/home/wz1119/nfshome/MU0CPUFINAL/ram.v
+/home/wz1119/nfshome/MU0CPUFINAL/ram111.bsf
+/home/wz1119/nfshome/MU0CPUFINAL/ram111.cmp
+/home/wz1119/nfshome/MU0CPUFINAL/ram111.inc
+/home/wz1119/nfshome/MU0CPUFINAL/ram111.qip
+/home/wz1119/nfshome/MU0CPUFINAL/ram111.v
+/home/wz1119/nfshome/MU0CPUFINAL/ram111_bb.v
+/home/wz1119/nfshome/MU0CPUFINAL/ram111_inst.v
+/home/wz1119/nfshome/MU0CPUFINAL/ram_bb.v
+/home/wz1119/nfshome/MU0CPUFINAL/ram_inst.v
+/home/wz1119/nfshome/MU0CPUFINAL/statemachineisolatedtest.bdf
+/usr/local/altera/18.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 53 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
