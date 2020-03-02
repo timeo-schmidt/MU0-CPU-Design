@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 248 256)
+	(rect 16 16 248 288)
 	(text "DECODER_CHECK" (rect 5 0 97 12)(font "Arial" ))
-	(text "inst" (rect 8 224 20 236)(font "Arial" ))
+	(text "inst" (rect 8 256 20 268)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -135,7 +135,21 @@ refer to the applicable agreement for further details.
 		(text "mux4" (rect 188 187 211 199)(font "Arial" ))
 		(line (pt 232 192)(pt 216 192)(line_width 1))
 	)
+	(port
+		(pt 232 208)
+		(output)
+		(text "pipeline_enable" (rect 0 0 57 12)(font "Arial" ))
+		(text "pipeline_enable" (rect 154 203 211 215)(font "Arial" ))
+		(line (pt 232 208)(pt 216 208)(line_width 1))
+	)
+	(port
+		(pt 232 224)
+		(output)
+		(text "stop_clock" (rect 0 0 42 12)(font "Arial" ))
+		(text "stop_clock" (rect 169 219 211 231)(font "Arial" ))
+		(line (pt 232 224)(pt 216 224)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 216 224)(line_width 1))
+		(rectangle (rect 16 16 216 256)(line_width 1))
 	)
 )

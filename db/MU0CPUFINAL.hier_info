@@ -1,10 +1,6 @@
 |MU0CPU
 MUXX <= DECODER_CHECK:inst.MUX1
-CLK => 3_bit_register:register3.CLK
-CLK => LPM_SHIFTREG:inst1.clock
-CLK => ram:ram.clock
-CLK => LPM_COUNTER:inst4.clock
-CLK => LPM_FF:IR.clock
+CLK_INPUT => BUSMUX:inst9.dataa[0]
 ACC_OUT[0] <= LPM_SHIFTREG:inst1.q[0]
 ACC_OUT[1] <= LPM_SHIFTREG:inst1.q[1]
 ACC_OUT[2] <= LPM_SHIFTREG:inst1.q[2]
@@ -78,9 +74,11 @@ k[12] <= BUSMUX:MUX.result[12]
 k[13] <= BUSMUX:MUX.result[13]
 k[14] <= BUSMUX:MUX.result[14]
 k[15] <= BUSMUX:MUX.result[15]
-FETCH <= cpu_statemachine:inst3.FETCH
-EXEC2 <= cpu_statemachine:inst3.EXEC2
-EXEC1 <= cpu_statemachine:inst3.EXEC1
+FETCH <= cpu_statemachine:inst11.FETCH
+EXEC2 <= cpu_statemachine:inst11.EXEC2
+EXEC1 <= cpu_statemachine:inst11.EXEC1
+COUNT_debug <= ctrl_count_enable.DB_MAX_OUTPUT_PORT_TYPE
+PL <= ctrl_pipeline_enable.DB_MAX_OUTPUT_PORT_TYPE
 MERGED[0] <= BUSMUX:MUX3.result[0]
 MERGED[1] <= BUSMUX:MUX3.result[1]
 MERGED[2] <= BUSMUX:MUX3.result[2]
@@ -116,42 +114,43 @@ RESULT[15] <= LPM_ADD_SUB:ALU2.result[15]
 
 
 |MU0CPU|DECODER_CHECK:inst
-FETCH => ~NO_FANOUT~
-EXEC1 => EXTRA.IN1
-EXEC1 => MUX1.IN1
+FETCH => MUX1.IN1
+FETCH => SLOAD.IN1
+EXEC1 => VF.IN1
+EXEC1 => EXTRA.IN0
 EXEC1 => MUX3.IN1
-EXEC1 => SLOAD.IN1
 EXEC1 => CNT_EN.IN1
-EXEC1 => WREN.IN1
 EXEC1 => SLOAD_ACC.IN1
 EXEC1 => shift.IN1
 EXEC1 => enable_acc.IN1
 EXEC1 => mux4.IN1
-EXEC2 => MUX1.IN1
-EXEC2 => CNT_EN.IN1
+EXEC2 => VF.IN1
+EXEC2 => EXTRA.IN1
+EXEC2 => SLOAD_ACC.IN1
 OP[12] => STA.IN1
 OP[12] => SUB.IN1
 OP[12] => JMI.IN1
+OP[12] => STP.IN1
 OP[12] => LSL.IN1
 OP[12] => ASR.IN1
 OP[12] => ADD.IN1
 OP[12] => LDA.IN1
-OP[12] => JMP.IN1
 OP[12] => JEQ.IN1
+OP[12] => JMP.IN1
 OP[12] => LDI.IN1
 OP[12] => LSR.IN1
 OP[13] => SUB.IN1
-OP[13] => JEQ.IN1
-OP[13] => LSR.IN1
+OP[13] => STP.IN1
+OP[13] => ASR.IN1
 OP[13] => LDA.IN1
-OP[13] => JMP.IN1
+OP[13] => JMI.IN1
 OP[13] => LDI.IN1
-OP[14] => JMP.IN0
+OP[14] => STP.IN0
 OP[14] => SUB.IN0
 OP[14] => LDI.IN0
 OP[15] => LDI.IN1
 OP[15] => SUB.IN1
-OP[15] => JMP.IN1
+OP[15] => STP.IN1
 ACC_OUT[0] => EQ.IN1
 ACC_OUT[1] => EQ.IN1
 ACC_OUT[2] => EQ.IN1
@@ -167,23 +166,24 @@ ACC_OUT[11] => EQ.IN1
 ACC_OUT[12] => EQ.IN1
 ACC_OUT[13] => EQ.IN1
 ACC_OUT[14] => EQ.IN0
-ACC_OUT[15] => MUX1.IN1
+ACC_OUT[15] => PL.IN1
 ACC_OUT[15] => EQ.IN1
-ACC_OUT[15] => CNT_EN.IN1
 EXTRA <= EXTRA.DB_MAX_OUTPUT_PORT_TYPE
 MUX1 <= MUX1.DB_MAX_OUTPUT_PORT_TYPE
 MUX3 <= MUX3.DB_MAX_OUTPUT_PORT_TYPE
 SLOAD <= SLOAD.DB_MAX_OUTPUT_PORT_TYPE
 CNT_EN <= CNT_EN.DB_MAX_OUTPUT_PORT_TYPE
-WREN <= WREN.DB_MAX_OUTPUT_PORT_TYPE
+WREN <= CNT_EN.DB_MAX_OUTPUT_PORT_TYPE
 SLOAD_ACC <= SLOAD_ACC.DB_MAX_OUTPUT_PORT_TYPE
 shift <= shift.DB_MAX_OUTPUT_PORT_TYPE
 enable_acc <= enable_acc.DB_MAX_OUTPUT_PORT_TYPE
 add_sub <= ADD.DB_MAX_OUTPUT_PORT_TYPE
 mux4 <= mux4.DB_MAX_OUTPUT_PORT_TYPE
+pipeline_enable <= PL.DB_MAX_OUTPUT_PORT_TYPE
+stop_clock <= STP.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|MU0CPU|cpu_statemachine:inst3
+|MU0CPU|cpu_statemachine:inst11
 cs[0] => EXEC1.IN1
 cs[0] => EXEC2.IN1
 cs[0] => FETCH.IN1
@@ -195,12 +195,16 @@ cs[2] => EXEC1.IN1
 cs[2] => EXEC2.IN1
 cs[2] => NS.IN1
 extra => NS.IN1
+extra => NS.IN1
+extra => NS.IN1
 EXEC1 <= EXEC1.DB_MAX_OUTPUT_PORT_TYPE
 EXEC2 <= EXEC2.DB_MAX_OUTPUT_PORT_TYPE
 FETCH <= FETCH.DB_MAX_OUTPUT_PORT_TYPE
 NS[0] <= NS.DB_MAX_OUTPUT_PORT_TYPE
 NS[1] <= NS.DB_MAX_OUTPUT_PORT_TYPE
 NS[2] <= <GND>
+pipeline_enabled => NS.IN1
+pipeline_enabled => NS.IN1
 
 
 |MU0CPU|3_bit_register:register3
@@ -213,6 +217,31 @@ CLK => stupid_dff.CLK
 a[0] => stupid_dff.DATAIN
 a[1] => inst1.DATAIN
 a[2] => inst.DATAIN
+
+
+|MU0CPU|BUSMUX:inst9
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|MU0CPU|BUSMUX:inst9|lpm_mux:$00000
+data[0][0] => mux_pjc:auto_generated.data[0]
+data[1][0] => mux_pjc:auto_generated.data[1]
+sel[0] => mux_pjc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_pjc:auto_generated.result[0]
+
+
+|MU0CPU|BUSMUX:inst9|lpm_mux:$00000|mux_pjc:auto_generated
+data[0] => l1_w0_n0_mux_dataout.IN1
+data[1] => l1_w0_n0_mux_dataout.IN1
+result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => l1_w0_n0_mux_dataout.IN0
+sel[0] => _.IN0
 
 
 |MU0CPU|LPM_SHIFTREG:inst1

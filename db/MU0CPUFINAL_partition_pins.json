@@ -312,6 +312,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "COUNT_debug",
+					"strict" : false
+				},
+				{
+					"name" : "PL",
+					"strict" : false
+				},
+				{
 					"name" : "MERGED[15]",
 					"strict" : false
 				},
@@ -440,7 +448,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "CLK_INPUT",
 					"strict" : false
 				}
 			]

@@ -15,9 +15,11 @@ module DECODER_CHECK
 	output shift,
 	output enable_acc,
 	output add_sub,
-	output mux4
+	output mux4,
+	output pipeline_enable,
+	output stop_clock
 );
-	wire LDA, STA, ADD, SUB, JMP, JMI, JEQ, STP, LDI, LSL, LSR, EQ, MI, ASR;
+	wire LDA, STA, ADD, SUB, JMP, JMI, JEQ, STP, LDI, LSL, LSR, EQ, MI, ASR, PL, VF, EXTRA_WIRE;
 	assign LDA = ~OP[15]&~OP[14]&~OP[13]&~OP[12]; 	// LDA 0000 0
 	assign STA = ~OP[15]&~OP[14]&~OP[13]&OP[12];		// STA 0001 1
 	assign ADD = ~OP[15]&~OP[14]&OP[13]&~OP[12];		// ADD 0010 2
@@ -34,19 +36,28 @@ module DECODER_CHECK
 	assign ASR = OP[15]&~OP[14]&OP[13]&OP[12];      // ASR 1011 B 
 	assign EQ = ~ACC_OUT[15]&~ACC_OUT[14]&~ACC_OUT[13]&~ACC_OUT[12]&~ACC_OUT[11]&~ACC_OUT[10]&~ACC_OUT[9]&~ACC_OUT[8]&~ACC_OUT[7]&~ACC_OUT[6]&~ACC_OUT[5]&~ACC_OUT[4]&~ACC_OUT[3]&~ACC_OUT[2]&~ACC_OUT[1]&~ACC_OUT[0];
 	assign MI = ACC_OUT[15];
-
+	
+	assign EXTRA_WIRE = (LDA|ADD|SUB);
+	assign PL = ~STA&~STP&~JMP&~(JEQ&EQ)&~(JMI&MI);
+	assign VF = PL&(EXEC2&EXTRA_WIRE | EXEC1&~EXTRA_WIRE);
+ 
 
 	
-	assign EXTRA = (LDA | ADD | SUB)&EXEC1;
-	assign MUX1 = EXEC1&(STA|ADD|SUB|LDA|(JMI&MI)|(JEQ&EQ)|JMP) | EXEC2&(ADD|SUB|LDA);
+	assign EXTRA = (LDA|ADD|SUB)&(EXEC2|EXEC1);
+	//assign MUX1 = (VF|FETCH)&(STA|ADD|SUB|LDA|(JMI&MI)|(JEQ&EQ)|JMP) | EXEC1&(ADD|SUB|LDA);
+	assign MUX1 =  ~(FETCH|VF|STP);
 	assign MUX3 = (LDA|LDI) | (EXEC1&(ADD|SUB)) ;
-	assign SLOAD = (JMP | (JEQ&EQ) | (JMI&MI))&EXEC1; 
-	assign CNT_EN = EXEC2&(LDA|ADD|SUB) | EXEC1&(ASR|LDI|STA|LSL|LSR|(JMI&~MI)|(JEQ&~EQ));
+	assign SLOAD = (JMP | (JEQ&EQ) | (JMI&MI))&(VF&FETCH); 
+	assign CNT_EN = (FETCH|VF)&PL| STA&EXEC1;
+	//assign CNT_EN = EXEC1&(LDA|ADD|SUB) | (VF|FETCH)&(ASR|LDI|STA|LSL|LSR|(JMI&~MI)|(JEQ&~EQ));
 	assign WREN = STA&EXEC1;
 	assign SLOAD_ACC = (LDI)&EXEC1 | (SUB|ADD|LDA)&EXEC2;
 	assign add_sub = ADD;
 	assign shift = ASR&EXEC1;
 	assign enable_acc = (LDI|LSL|LSR|ASR)&EXEC1 | (SUB|ADD|LDA)&EXEC2;
 	assign mux4 = EXEC1&LSR;
+	assign stop_clock = STP;
+	
+	assign pipeline_enable = PL;
 	
 endmodule

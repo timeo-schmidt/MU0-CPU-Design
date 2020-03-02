@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MU0CPUFINAL
-Mon Mar  2 12:50:11 2020
+Mon Mar  2 16:58:04 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -18,20 +18,21 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Source assignments for ram:ram|altsyncram:altsyncram_component|altsyncram_skp1:auto_generated
- 13. Parameter Settings for User Entity Instance: LPM_SHIFTREG:inst1
- 14. Parameter Settings for User Entity Instance: BUSMUX:MUX3
- 15. Parameter Settings for User Entity Instance: LPM_ADD_SUB:ALU2
- 16. Parameter Settings for User Entity Instance: ram:ram|altsyncram:altsyncram_component
- 17. Parameter Settings for User Entity Instance: BUSMUX:MUX1
- 18. Parameter Settings for User Entity Instance: LPM_COUNTER:inst4
- 19. Parameter Settings for User Entity Instance: BUSMUX:MUX
- 20. Parameter Settings for User Entity Instance: LPM_FF:IR
- 21. Parameter Settings for User Entity Instance: constant:inst5|lpm_constant:LPM_CONSTANT_component
- 22. lpm_shiftreg Parameter Settings by Entity Instance
- 23. altsyncram Parameter Settings by Entity Instance
- 24. Post-Synthesis Netlist Statistics for Top Partition
- 25. Elapsed Time Per Partition
- 26. Analysis & Synthesis Messages
+ 13. Parameter Settings for User Entity Instance: BUSMUX:inst9
+ 14. Parameter Settings for User Entity Instance: LPM_SHIFTREG:inst1
+ 15. Parameter Settings for User Entity Instance: BUSMUX:MUX3
+ 16. Parameter Settings for User Entity Instance: LPM_ADD_SUB:ALU2
+ 17. Parameter Settings for User Entity Instance: ram:ram|altsyncram:altsyncram_component
+ 18. Parameter Settings for User Entity Instance: BUSMUX:MUX1
+ 19. Parameter Settings for User Entity Instance: LPM_COUNTER:inst4
+ 20. Parameter Settings for User Entity Instance: BUSMUX:MUX
+ 21. Parameter Settings for User Entity Instance: LPM_FF:IR
+ 22. Parameter Settings for User Entity Instance: constant:inst5|lpm_constant:LPM_CONSTANT_component
+ 23. lpm_shiftreg Parameter Settings by Entity Instance
+ 24. altsyncram Parameter Settings by Entity Instance
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -57,14 +58,14 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar  2 12:50:11 2020           ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar  2 16:58:04 2020           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; MU0CPUFINAL                                     ;
 ; Top-level Entity Name           ; MU0CPU                                          ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
 ; Total registers                 ; 46                                              ;
-; Total pins                      ; 110                                             ;
+; Total pins                      ; 112                                             ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 65,536                                          ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -177,7 +178,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -192,16 +194,17 @@ refer to the applicable agreement for further details.
 ; 3_bit_register.bdf               ; yes             ; User Block Diagram/Schematic File      ; /home/wz1119/nfshome/MU0CPUFINAL/3_bit_register.bdf                            ;         ;
 ; constant.v                       ; yes             ; User Wizard-Generated File             ; /home/wz1119/nfshome/MU0CPUFINAL/constant.v                                    ;         ;
 ; DECODER_CHECK.v                  ; yes             ; User Verilog HDL File                  ; /home/wz1119/nfshome/MU0CPUFINAL/DECODER_CHECK.v                               ;         ;
-; lpm_shiftreg.tdf                 ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf        ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/aglobal181.inc          ;         ;
 ; busmux.tdf                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/busmux.tdf              ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_mux.tdf             ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/aglobal181.inc          ;         ;
 ; muxlut.inc                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/muxlut.inc              ;         ;
 ; bypassff.inc                     ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/bypassff.inc            ;         ;
 ; altshift.inc                     ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; db/mux_pjc.tdf                   ; yes             ; Auto-Generated Megafunction            ; /home/wz1119/nfshome/MU0CPUFINAL/db/mux_pjc.tdf                                ;         ;
+; lpm_shiftreg.tdf                 ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf        ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
 ; db/mux_flc.tdf                   ; yes             ; Auto-Generated Megafunction            ; /home/wz1119/nfshome/MU0CPUFINAL/db/mux_flc.tdf                                ;         ;
 ; lpm_add_sub.tdf                  ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
 ; addcore.inc                      ; yes             ; Megafunction                           ; /usr/local/altera/18.1/quartus/libraries/megafunctions/addcore.inc             ;         ;
@@ -230,33 +233,33 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 75        ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 98        ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 20        ;
-;     -- 5 input functions                    ; 6         ;
-;     -- 4 input functions                    ; 21        ;
-;     -- <=3 input functions                  ; 51        ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 46        ;
-;                                             ;           ;
-; I/O pins                                    ; 110       ;
-; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 65536     ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 62        ;
-; Total fan-out                               ; 1030      ;
-; Average fan-out                             ; 2.71      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                             ;
++---------------------------------------------+---------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                     ;
++---------------------------------------------+---------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 70                                                                        ;
+;                                             ;                                                                           ;
+; Combinational ALUT usage for logic          ; 99                                                                        ;
+;     -- 7 input functions                    ; 0                                                                         ;
+;     -- 6 input functions                    ; 9                                                                         ;
+;     -- 5 input functions                    ; 19                                                                        ;
+;     -- 4 input functions                    ; 17                                                                        ;
+;     -- <=3 input functions                  ; 54                                                                        ;
+;                                             ;                                                                           ;
+; Dedicated logic registers                   ; 46                                                                        ;
+;                                             ;                                                                           ;
+; I/O pins                                    ; 112                                                                       ;
+; Total MLAB memory bits                      ; 0                                                                         ;
+; Total block memory bits                     ; 65536                                                                     ;
+;                                             ;                                                                           ;
+; Total DSP Blocks                            ; 0                                                                         ;
+;                                             ;                                                                           ;
+; Maximum fan-out node                        ; busmux:inst9|lpm_mux:$00000|mux_pjc:auto_generated|l1_w0_n0_mux_dataout~0 ;
+; Maximum fan-out                             ; 62                                                                        ;
+; Total fan-out                               ; 1002                                                                      ;
+; Average fan-out                             ; 2.60                                                                      ;
++---------------------------------------------+---------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -264,9 +267,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Entity Name      ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------+------------------+--------------+
-; |MU0CPU                                   ; 98 (0)              ; 46 (0)                    ; 65536             ; 0          ; 110  ; 0            ; |MU0CPU                                                                        ; MU0CPU           ; work         ;
-;    |3_bit_register:register3|             ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|3_bit_register:register3                                               ; 3_bit_register   ; work         ;
-;    |DECODER_CHECK:inst|                   ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|DECODER_CHECK:inst                                                     ; DECODER_CHECK    ; work         ;
+; |MU0CPU                                   ; 99 (0)              ; 46 (0)                    ; 65536             ; 0          ; 112  ; 0            ; |MU0CPU                                                                        ; MU0CPU           ; work         ;
+;    |3_bit_register:register3|             ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|3_bit_register:register3                                               ; 3_bit_register   ; work         ;
+;    |DECODER_CHECK:inst|                   ; 19 (19)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|DECODER_CHECK:inst                                                     ; DECODER_CHECK    ; work         ;
 ;    |busmux:MUX1|                          ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX1                                                            ; busmux           ; work         ;
 ;       |lpm_mux:$00000|                    ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX1|lpm_mux:$00000                                             ; lpm_mux          ; work         ;
 ;          |mux_blc:auto_generated|         ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX1|lpm_mux:$00000|mux_blc:auto_generated                      ; mux_blc          ; work         ;
@@ -276,11 +279,14 @@ refer to the applicable agreement for further details.
 ;    |busmux:MUX|                           ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX                                                             ; busmux           ; work         ;
 ;       |lpm_mux:$00000|                    ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX|lpm_mux:$00000                                              ; lpm_mux          ; work         ;
 ;          |mux_flc:auto_generated|         ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:MUX|lpm_mux:$00000|mux_flc:auto_generated                       ; mux_flc          ; work         ;
-;    |cpu_statemachine:inst3|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|cpu_statemachine:inst3                                                 ; cpu_statemachine ; work         ;
+;    |busmux:inst9|                         ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:inst9                                                           ; busmux           ; work         ;
+;       |lpm_mux:$00000|                    ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:inst9|lpm_mux:$00000                                            ; lpm_mux          ; work         ;
+;          |mux_pjc:auto_generated|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|busmux:inst9|lpm_mux:$00000|mux_pjc:auto_generated                     ; mux_pjc          ; work         ;
+;    |cpu_statemachine:inst11|              ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|cpu_statemachine:inst11                                                ; cpu_statemachine ; work         ;
 ;    |lpm_add_sub:ALU2|                     ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_add_sub:ALU2                                                       ; lpm_add_sub      ; work         ;
 ;       |add_sub_i1b:auto_generated|        ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_add_sub:ALU2|add_sub_i1b:auto_generated                            ; add_sub_i1b      ; work         ;
-;    |lpm_counter:inst4|                    ; 14 (0)              ; 12 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_counter:inst4                                                      ; lpm_counter      ; work         ;
-;       |cntr_0gh:auto_generated|           ; 14 (14)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_counter:inst4|cntr_0gh:auto_generated                              ; cntr_0gh         ; work         ;
+;    |lpm_counter:inst4|                    ; 12 (0)              ; 12 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_counter:inst4                                                      ; lpm_counter      ; work         ;
+;       |cntr_0gh:auto_generated|           ; 12 (12)             ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_counter:inst4|cntr_0gh:auto_generated                              ; cntr_0gh         ; work         ;
 ;    |lpm_ff:IR|                            ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_ff:IR                                                              ; lpm_ff           ; work         ;
 ;    |lpm_shiftreg:inst1|                   ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |MU0CPU|lpm_shiftreg:inst1                                                     ; lpm_shiftreg     ; work         ;
 ;    |ram:ram|                              ; 0 (0)               ; 0 (0)                     ; 65536             ; 0          ; 0    ; 0            ; |MU0CPU|ram:ram                                                                ; ram              ; work         ;
@@ -326,7 +332,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 46    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 44    ;
+; Number of registers using Synchronous Load   ; 32    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 28    ;
@@ -341,6 +347,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+---------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                               ;
 +---------------------------------+--------------------+------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst9 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; WIDTH          ; 1     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------+
@@ -577,25 +593,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 46                          ;
-;     ENA SLD           ; 28                          ;
+;     ENA               ; 12                          ;
+;     ENA SLD           ; 16                          ;
 ;     SLD               ; 16                          ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 99                          ;
+; arriav_lcell_comb     ; 102                         ;
 ;     arith             ; 29                          ;
 ;         1 data inputs ; 13                          ;
 ;         3 data inputs ; 16                          ;
-;     normal            ; 70                          ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 14                          ;
-;         4 data inputs ; 21                          ;
-;         5 data inputs ; 6                           ;
-;         6 data inputs ; 20                          ;
-; boundary_port         ; 110                         ;
+;     normal            ; 73                          ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 16                          ;
+;         4 data inputs ; 17                          ;
+;         5 data inputs ; 19                          ;
+;         6 data inputs ; 9                           ;
+; boundary_port         ; 112                         ;
 ; stratixv_ram_block    ; 16                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.60                        ;
-; Average LUT depth     ; 3.43                        ;
+; Max LUT depth         ; 6.60                        ;
+; Average LUT depth     ; 3.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -614,7 +631,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Mar  2 12:50:01 2020
+    Info: Processing started: Mon Mar  2 16:57:54 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MU0CPUFINAL -c MU0CPUFINAL
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
@@ -641,9 +658,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file DECODER
     Info (12023): Found entity 1: DECODER_CHECK File: /home/wz1119/nfshome/MU0CPUFINAL/DECODER_CHECK.v Line: 1
 Info (12127): Elaborating entity "MU0CPU" for the top level hierarchy
 Info (12128): Elaborating entity "DECODER_CHECK" for hierarchy "DECODER_CHECK:inst"
-Warning (10036): Verilog HDL or VHDL warning at DECODER_CHECK.v(20): object "STP" assigned a value but never read File: /home/wz1119/nfshome/MU0CPUFINAL/DECODER_CHECK.v Line: 20
-Info (12128): Elaborating entity "cpu_statemachine" for hierarchy "cpu_statemachine:inst3"
+Info (12128): Elaborating entity "cpu_statemachine" for hierarchy "cpu_statemachine:inst11"
 Info (12128): Elaborating entity "3_bit_register" for hierarchy "3_bit_register:register3"
+Info (12128): Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst9"
+Info (12130): Elaborated megafunction instantiation "BUSMUX:inst9"
+Info (12133): Instantiated megafunction "BUSMUX:inst9" with the following parameter:
+    Info (12134): Parameter "WIDTH" = "1"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst9|lpm_mux:$00000" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12131): Elaborated megafunction instantiation "BUSMUX:inst9|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst9" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/busmux.tdf Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_pjc.tdf
+    Info (12023): Found entity 1: mux_pjc File: /home/wz1119/nfshome/MU0CPUFINAL/db/mux_pjc.tdf Line: 22
+Info (12128): Elaborating entity "mux_pjc" for hierarchy "BUSMUX:inst9|lpm_mux:$00000|mux_pjc:auto_generated" File: /usr/local/altera/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "LPM_SHIFTREG" for hierarchy "LPM_SHIFTREG:inst1"
 Info (12130): Elaborated megafunction instantiation "LPM_SHIFTREG:inst1"
 Info (12133): Instantiated megafunction "LPM_SHIFTREG:inst1" with the following parameter:
@@ -715,18 +740,23 @@ Info (12133): Instantiated megafunction "constant:inst5|lpm_constant:LPM_CONSTAN
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
     Info (12134): Parameter "lpm_width" = "4"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer busmux:MUX|lpm_mux:$00000|mux_flc:auto_generated|l1_w12_n0_mux_dataout~0 File: /home/wz1119/nfshome/MU0CPUFINAL/db/mux_flc.tdf Line: 32
+    Warning (19017): Found clock multiplexer busmux:MUX|lpm_mux:$00000|mux_flc:auto_generated|l1_w13_n0_mux_dataout~0 File: /home/wz1119/nfshome/MU0CPUFINAL/db/mux_flc.tdf Line: 33
+    Warning (19017): Found clock multiplexer busmux:MUX|lpm_mux:$00000|mux_flc:auto_generated|l1_w15_n0_mux_dataout~0 File: /home/wz1119/nfshome/MU0CPUFINAL/db/mux_flc.tdf Line: 35
+    Warning (19017): Found clock multiplexer busmux:MUX|lpm_mux:$00000|mux_flc:auto_generated|l1_w14_n0_mux_dataout~0 File: /home/wz1119/nfshome/MU0CPUFINAL/db/mux_flc.tdf Line: 34
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 255 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 258 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 109 output pins
-    Info (21061): Implemented 129 logic cells
+    Info (21059): Implemented 111 output pins
+    Info (21061): Implemented 130 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 1245 megabytes
-    Info: Processing ended: Mon Mar  2 12:50:11 2020
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 1253 megabytes
+    Info: Processing ended: Mon Mar  2 16:58:04 2020
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Total CPU time (on all processors): 00:00:29
 
 

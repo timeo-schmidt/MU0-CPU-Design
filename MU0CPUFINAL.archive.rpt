@@ -1,5 +1,5 @@
 Archive Project report for MU0CPUFINAL
-Mon Mar  2 12:51:45 2020
+Mon Mar  2 17:01:19 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Mon Mar  2 12:51:45 2020 ;
+; Archive Project Status ; Successful - Mon Mar  2 17:01:19 2020 ;
 ; Revision Name          ; MU0CPUFINAL                           ;
 ; Top-level Entity Name  ; MU0CPU                                ;
 ; Family                 ; Cyclone V                             ;
@@ -53,14 +53,14 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory /home/wz1119/nfshome/MU0CPUFINAL/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive '/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL_need_pipeline.qar'
+Info: Generated archive '/home/wz1119/nfshome/MU0CPUFINAL/MU0CPUFINAL_PIPELINEDONE_JMPNOT.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'MU0CPUFINAL.archive.rpt'
 Info (23030): Evaluation of Tcl script /usr/local/altera/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 1157 megabytes
-    Info: Processing ended: Mon Mar  2 12:51:45 2020
+    Info: Processing ended: Mon Mar  2 17:01:19 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -123,6 +123,9 @@ Info: Quartus Prime Shell was successful. 0 errors, 1 warning
 ; Waveform18.vwf                                                 ;
 ; Waveform19.vwf                                                 ;
 ; Waveform20.vwf                                                 ;
+; Waveform21.vwf                                                 ;
+; Waveform22.vwf                                                 ;
+; Waveform23.vwf                                                 ;
 +----------------------------------------------------------------+
 
 
