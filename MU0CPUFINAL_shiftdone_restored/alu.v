@@ -17,7 +17,7 @@ output carryen;        // the enable signal for CARRY flip-flinstruction
 output skipen;         // the enable signal for SKIP flip-flinstruction
 output wenout;         // the enable for writing Rd in the register file
 
-	
+
 
 // these wires are for convenience to make logic easier to see
 wire [2:0] instructioninstr = instruction [6:4];    // instruction field from IR'
@@ -58,11 +58,15 @@ assign LSR = instruction[15]&~instruction[14]&instruction[13]&~instruction[12];	
 // change as needed
 assign wenout = exec1&~(LDA|STA|ADD|SUB|JMP|JEQ|JMI|STP|LDI|LSL|LSR);  // correct timing, to do: add enable condition
 
-assign carryen = exec1; // correct timing, to do: add enable condition
-assign carryout = alucout; // this is correct except for XSR
+assign carryen = exec1&cwinstr; // correct timing, to do: add enable condition
+assign carryout = alucout | rsdata[0]&instruction[4]&instruction[5]&~instruction[6]; // this is correct except for XSR
                            // note the special case of rsdata[0] when instruction=011 (XSR)
-assign cin = 0;         // dummy, to do: replace with correct logic
-assign shiftin = 0;     // dummy, to do: set equal to cin for correct XSR functionality
+assign cin = instruction[15]&instruction[14]&~instruction[13]&instruction[12] | carrystatus&instruction[15]&instruction[14]&instruction[13]&~instruction[12] | 
+ rsdata[15]&instruction[15]&instruction[14]&instruction[13]&instruction[12];         
+
+
+// dummy, to do: replace with correct logic
+assign shiftin = cin&instruction[4]&instruction[5]&~instruction[6];     // dummy, to do: set equal to cin for correct XSR functionality
 
 assign skipout = 0;     // dummy, to do: replace with correct logic
 assign skipen = exec1;  // correct timing, to do: add enable condition

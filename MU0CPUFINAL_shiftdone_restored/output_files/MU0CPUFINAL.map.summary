@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Wed Mar  4 12:39:33 2020
+Analysis & Synthesis Status : Successful - Thu Mar  5 12:53:23 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : MU0CPUFINAL
 Top-level Entity Name : MU0CPU
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 94
-Total pins : 95
+Total registers : 95
+Total pins : 96
 Total virtual pins : 0
 Total block memory bits : 65,536
 Total DSP Blocks : 0

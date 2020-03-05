@@ -1,0 +1,121 @@
+Archive Project report for MU0CPUFINAL
+Thu Mar  5 12:55:29 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Thu Mar  5 12:55:29 2020 ;
+; Revision Name          ; MU0CPUFINAL                           ;
+; Top-level Entity Name  ; MU0CPU                                ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory /home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive '/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL_lab5_untiltask6.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'MU0CPUFINAL.archive.rpt'
+Info (23030): Evaluation of Tcl script /usr/local/altera/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 1157 megabytes
+    Info: Processing ended: Thu Mar  5 12:55:30 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------+
+; Files Archived               ;
++------------------------------+
+; File Name                    ;
++------------------------------+
+; 3_bit_register.bdf           ;
+; alu.v                        ;
+; assignment_defaults.qdf      ;
+; cpu_decoder.v                ;
+; cpu_statemachine.v           ;
+; DECODER_CHECK.v              ;
+; lab5.mif                     ;
+; lab5ram1port.bsf             ;
+; lab5ram1port.cmp             ;
+; lab5ram1port.inc             ;
+; lab5ram1port.qip             ;
+; lab5ram1port.v               ;
+; lab5ram1port_bb.v            ;
+; lab5ram1port_inst.v          ;
+; Mif1.mif                     ;
+; MU0CPU.bdf                   ;
+; MU0CPUFINAL.bdf              ;
+; MU0CPUFINAL.mif              ;
+; MU0CPUFINAL.qpf              ;
+; MU0CPUFINAL.qsf              ;
+; MU0CPUFINAL.tcl              ;
+; regfile.bdf                  ;
+; statemachineisolatedtest.bdf ;
+; top.bdf                      ;
+; Waveform.vwf                 ;
+; Waveform1.vwf                ;
+; Waveform2.vwf                ;
+; Waveform3.vwf                ;
+; Waveform4.vwf                ;
+; Waveform5.vwf                ;
+; Waveform6.vwf                ;
+; Waveform7.vwf                ;
+; Waveform8.vwf                ;
+; Waveform9.vwf                ;
+; Waveform10.vwf               ;
+; Waveform11.vwf               ;
+; Waveform12.vwf               ;
+; Waveform13.vwf               ;
+; Waveform14.vwf               ;
+; Waveform15.vwf               ;
+; Waveform16.vwf               ;
+; Waveform17.vwf               ;
+; Waveform18.vwf               ;
+; Waveform19.vwf               ;
+; Waveform20.vwf               ;
+; Waveform21.vwf               ;
++------------------------------+
+
+

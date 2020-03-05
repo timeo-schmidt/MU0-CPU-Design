@@ -1,5 +1,5 @@
 Flow report for MU0CPUFINAL
-Wed Mar  4 12:40:06 2020
+Thu Mar  5 12:53:24 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Mar  4 12:40:06 2020           ;
+; Flow Status                     ; Successful - Thu Mar  5 12:53:23 2020           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; MU0CPUFINAL                                     ;
 ; Top-level Entity Name           ; MU0CPU                                          ;
@@ -48,8 +48,8 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CGXFC7C7F23C8                                  ;
 ; Timing Models                   ; Final                                           ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 94                                              ;
-; Total pins                      ; 95                                              ;
+; Total registers                 ; 95                                              ;
+; Total pins                      ; 96                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 65,536                                          ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/04/2020 12:39:23 ;
+; Start date & time ; 03/05/2020 12:53:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MU0CPUFINAL         ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 22095314655756.158332556330685         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 22095314655756.158341279355733         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -104,10 +104,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 1235 MB             ; 00:00:28                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1232 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1240 MB             ; 00:00:01                           ;
-; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:30                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 1234 MB             ; 00:00:29                           ;
+; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,8 +115,6 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname     ; OS Name        ; OS Version     ; Processor type ;
 +----------------------+----------------------+----------------+----------------+----------------+
 ; Analysis & Synthesis ; ee-mill2.ee.ic.ac.uk ; CentOS release ; CentOS release ; x86_64         ;
-; EDA Netlist Writer   ; ee-mill2.ee.ic.ac.uk ; CentOS release ; CentOS release ; x86_64         ;
-; EDA Netlist Writer   ; ee-mill2.ee.ic.ac.uk ; CentOS release ; CentOS release ; x86_64         ;
 +----------------------+----------------------+----------------+----------------+----------------+
 
 
@@ -126,8 +122,6 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off MU0CPUFINAL -c MU0CPUFINAL
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off MU0CPUFINAL -c MU0CPUFINAL --vector_source=/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform19.vwf --testbench_file=/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/simulation/qsim/Waveform19.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/simulation/qsim/ MU0CPUFINAL -c MU0CPUFINAL
 
 
 
