@@ -1,5 +1,5 @@
 Archive Project report for MU0CPUFINAL
-Thu Mar  5 12:55:29 2020
+Mon Mar  9 15:26:33 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -35,7 +35,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Thu Mar  5 12:55:29 2020 ;
+; Archive Project Status ; Successful - Mon Mar  9 15:26:33 2020 ;
 ; Revision Name          ; MU0CPUFINAL                           ;
 ; Top-level Entity Name  ; MU0CPU                                ;
 ; Family                 ; Cyclone V                             ;
@@ -53,15 +53,15 @@ Info: Archive will store files relative to the closest common parent directory
 Info (13213): Using common directory /home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive '/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL_lab5_untiltask6.qar'
+Info: Generated archive '/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL_lab5_done.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'MU0CPUFINAL.archive.rpt'
 Info (23030): Evaluation of Tcl script /usr/local/altera/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 1157 megabytes
-    Info: Processing ended: Thu Mar  5 12:55:30 2020
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Mon Mar  9 15:26:33 2020
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
@@ -92,6 +92,7 @@ Info: Quartus Prime Shell was successful. 0 errors, 4 warnings
 ; MU0CPUFINAL.qsf              ;
 ; MU0CPUFINAL.tcl              ;
 ; regfile.bdf                  ;
+; skip_ctrl.v                  ;
 ; statemachineisolatedtest.bdf ;
 ; top.bdf                      ;
 ; Waveform.vwf                 ;
@@ -116,6 +117,8 @@ Info: Quartus Prime Shell was successful. 0 errors, 4 warnings
 ; Waveform19.vwf               ;
 ; Waveform20.vwf               ;
 ; Waveform21.vwf               ;
+; Waveform22.vwf               ;
+; Waveform23.vwf               ;
 +------------------------------+
 
 

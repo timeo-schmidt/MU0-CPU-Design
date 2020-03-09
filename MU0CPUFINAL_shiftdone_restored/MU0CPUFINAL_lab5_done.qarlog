@@ -1,0 +1,60 @@
+Quartus Prime Archive log --	/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL_lab5_done.qarlog
+
+Archive:	/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL_lab5_done.qar
+Date:		Mon Mar  9 15:26:33 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/3_bit_register.bdf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/DECODER_CHECK.v
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPU.bdf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL.bdf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL.mif
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL.qpf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL.qsf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/MU0CPUFINAL.tcl
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Mif1.mif
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform1.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform10.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform11.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform12.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform13.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform14.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform15.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform16.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform17.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform18.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform19.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform2.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform20.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform21.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform22.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform23.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform3.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform4.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform5.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform6.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform7.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform8.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/Waveform9.vwf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/alu.v
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/assignment_defaults.qdf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/cpu_decoder.v
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/cpu_statemachine.v
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/lab5.mif
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/lab5ram1port.bsf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/lab5ram1port.cmp
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/lab5ram1port.inc
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/lab5ram1port.qip
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/lab5ram1port.v
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/lab5ram1port_bb.v
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/lab5ram1port_inst.v
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/regfile.bdf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/skip_ctrl.v
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/statemachineisolatedtest.bdf
+/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/top.bdf
+	======= Total: 49 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

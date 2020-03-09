@@ -59,6 +59,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 96)(pt 16 96))
 	)
 	(port
+		(pt 0 112)
+		(input)
+		(text "EXEC2" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
+		(text "EXEC2" (rect 21 107 58 122)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
 		(pt 208 32)
 		(output)
 		(text "skipff" (rect 0 0 34 15)(font "Intel Clear" (font_size 8)))

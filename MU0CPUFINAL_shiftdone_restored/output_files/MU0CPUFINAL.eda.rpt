@@ -1,5 +1,5 @@
 EDA Netlist Writer report for MU0CPUFINAL
-Thu Mar  5 12:30:13 2020
+Mon Mar  9 15:24:19 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Mar  5 12:30:13 2020 ;
+; EDA Netlist Writer Status ; Successful - Mon Mar  9 15:24:19 2020 ;
 ; Revision Name             ; MU0CPUFINAL                           ;
 ; Top-level Entity Name     ; MU0CPU                                ;
 ; Family                    ; Cyclone V                             ;
@@ -93,7 +93,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Mar  5 12:30:12 2020
+    Info: Processing started: Mon Mar  9 15:24:18 2020
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/simulation/qsim/ MU0CPUFINAL -c MU0CPUFINAL
 Warning (125092): Tcl Script File ram.qip not found
     Info (125063): set_global_assignment -name QIP_FILE ram.qip
@@ -105,8 +105,8 @@ Info (119006): Selected device 5CGXFC7C7F23C8 for design "MU0CPUFINAL"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file MU0CPUFINAL.vo in folder "/home/wz1119/nfshome/unpipelined/MU0-CPU-Design/MU0CPUFINAL_shiftdone_restored/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 1240 megabytes
-    Info: Processing ended: Thu Mar  5 12:30:13 2020
+    Info: Peak virtual memory: 1238 megabytes
+    Info: Processing ended: Mon Mar  9 15:24:19 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

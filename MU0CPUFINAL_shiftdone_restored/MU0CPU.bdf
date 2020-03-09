@@ -213,9 +213,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect -376 -272 -200 -256)
+	(rect -216 -152 -40 -136)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "pin_name1" (rect 90 0 147 11)(font "Arial" ))
+	(text "ARMISHCARRY" (rect 90 0 165 13)(font "Intel Clear" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -229,9 +229,73 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect -216 -152 -40 -136)
+	(rect -216 -168 -40 -152)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "ARMISHCARRY" (rect 90 0 165 13)(font "Intel Clear" ))
+	(text "Testr_1q[15..0]" (rect 90 0 164 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -216 -136 -40 -120)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "Testr_2q[15..0]" (rect 90 0 164 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -216 -120 -40 -104)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "Testr_3q[15..0]" (rect 90 0 164 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -976 1216 -800 1232)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "skipff_check" (rect 90 0 153 13)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -832 1384 -656 1400)
+	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
+	(text "FLIPFLOP" (rect 90 0 141 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -874,7 +938,7 @@ refer to the applicable agreement for further details.
 	(annotation_block (parameter)(rect 856 368 1054 398))
 )
 (symbol
-	(rect -648 728 -616 760)
+	(rect -784 736 -752 768)
 	(text "GND" (rect 8 16 30 26)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 21 28 34)(font "Intel Clear" )(invisible))
 	(port
@@ -920,92 +984,7 @@ refer to the applicable agreement for further details.
 		(line (pt 96 40)(pt 96 24))
 	)
 	(flipy)
-	(annotation_block (parameter)(rect -144 136 51 181))
-)
-(symbol
-	(rect -480 -224 -272 -64)
-	(text "top" (rect 5 0 26 15)(font "Intel Clear" (font_size 8)))
-	(text "REGFILE" (rect 8 143 51 156)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "r0wen" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
-		(text "r0wen" (rect 21 27 59 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "r0din[15..0]" (rect 0 0 73 15)(font "Intel Clear" (font_size 8)))
-		(text "r0din[15..0]" (rect 21 43 94 58)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "clock" (rect 0 0 33 15)(font "Intel Clear" (font_size 8)))
-		(text "clock" (rect 21 59 54 74)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "instr[15..0]" (rect 0 0 68 15)(font "Intel Clear" (font_size 8)))
-		(text "instr[15..0]" (rect 21 75 89 90)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "EXEC1" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
-		(text "EXEC1" (rect 21 91 58 106)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 208 32)
-		(output)
-		(text "skipff" (rect 0 0 34 15)(font "Intel Clear" (font_size 8)))
-		(text "skipff" (rect 153 27 187 42)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 32)(pt 192 32))
-	)
-	(port
-		(pt 208 48)
-		(output)
-		(text "r0q[15..0]" (rect 0 0 61 15)(font "Intel Clear" (font_size 8)))
-		(text "r0q[15..0]" (rect 126 43 187 58)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 48)(pt 192 48)(line_width 3))
-	)
-	(port
-		(pt 208 64)
-		(output)
-		(text "testr1q[15..0]" (rect 0 0 84 15)(font "Intel Clear" (font_size 8)))
-		(text "testr1q[15..0]" (rect 103 59 187 74)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 64)(pt 192 64)(line_width 3))
-	)
-	(port
-		(pt 208 80)
-		(output)
-		(text "carryff" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
-		(text "carryff" (rect 150 75 187 90)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 80)(pt 192 80))
-	)
-	(port
-		(pt 208 96)
-		(output)
-		(text "testr2q[15..0]" (rect 0 0 84 15)(font "Intel Clear" (font_size 8)))
-		(text "testr2q[15..0]" (rect 103 91 187 106)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 96)(pt 192 96)(line_width 3))
-	)
-	(port
-		(pt 208 112)
-		(output)
-		(text "testr3q[15..0]" (rect 0 0 84 15)(font "Intel Clear" (font_size 8)))
-		(text "testr3q[15..0]" (rect 103 107 187 122)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 112)(pt 192 112)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 192 144))
-	)
+	(annotation_block (parameter)(rect -152 128 43 173))
 )
 (symbol
 	(rect 1920 -272 2048 -56)
@@ -1268,10 +1247,282 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 216 224))
 	)
 )
-(connector
-	(text "ctrl_pc_sload" (rect 360 -536 428 -523)(font "Intel Clear" ))
-	(pt 408 -520)
-	(pt 448 -520)
+(symbol
+	(rect -8 -552 160 -472)
+	(text "skip_ctrl" (rect 5 0 47 11)(font "Arial" ))
+	(text "inst2" (rect 8 64 35 77)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "skip" (rect 0 0 20 11)(font "Arial" ))
+		(text "skip" (rect 21 27 41 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "signal" (rect 0 0 30 11)(font "Arial" ))
+		(text "signal" (rect 21 43 51 54)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "skip_control" (rect 0 0 61 11)(font "Arial" ))
+		(text "skip_control" (rect 96 27 157 38)(font "Arial" ))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 64))
+	)
+)
+(symbol
+	(rect 1776 -456 1944 -376)
+	(text "skip_ctrl" (rect 5 0 47 11)(font "Arial" ))
+	(text "inst5" (rect 8 64 35 77)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "skip" (rect 0 0 20 11)(font "Arial" ))
+		(text "skip" (rect 21 27 41 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "signal" (rect 0 0 30 11)(font "Arial" ))
+		(text "signal" (rect 21 43 51 54)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "skip_control" (rect 0 0 61 11)(font "Arial" ))
+		(text "skip_control" (rect 96 27 157 38)(font "Arial" ))
+		(line (pt 168 32)(pt 152 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 64))
+	)
+)
+(symbol
+	(rect -1008 1304 -832 1448)
+	(text "LPM_FF" (rect 19 0 78 16)(font "Arial" (font_size 10)))
+	(text "CARRY" (rect 3 133 37 146)(font "Intel Clear" ))
+	(port
+		(pt 88 144)
+		(input)
+		(text "aclr" (rect 80 113 101 126)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 80 113 101 126)(font "Arial" (font_size 8)))
+		(line (pt 88 144)(pt 88 128))
+		(unused)
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "aload" (rect 20 17 50 30)(font "Arial" (font_size 8)))
+		(text "aload" (rect 20 17 50 30)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24))
+		(unused)
+	)
+	(port
+		(pt 88 0)
+		(input)
+		(text "aset" (rect 79 17 102 30)(font "Arial" (font_size 8)))
+		(text "aset" (rect 79 17 102 30)(font "Arial" (font_size 8)))
+		(line (pt 88 16)(pt 88 0))
+		(unused)
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "clock" (rect 20 81 48 94)(font "Arial" (font_size 8))(invisible))
+		(text "clock" (rect 20 81 48 94)(font "Arial" (font_size 8))(invisible))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "data[LPM_WIDTH-1..0]" (rect 20 63 152 76)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 20 63 51 76)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 3))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "enable" (rect 20 97 60 110)(font "Arial" (font_size 8)))
+		(text "enable" (rect 20 97 60 110)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "sclr" (rect 20 113 38 126)(font "Arial" (font_size 8)))
+		(text "sclr" (rect 20 113 38 126)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 16 120))
+		(unused)
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "sload" (rect 20 49 48 62)(font "Arial" (font_size 8)))
+		(text "sload" (rect 20 49 48 62)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+		(unused)
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "sset" (rect 20 33 41 46)(font "Arial" (font_size 8)))
+		(text "sset" (rect 20 33 41 46)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+		(unused)
+	)
+	(port
+		(pt 176 88)
+		(output)
+		(text "q[LPM_WIDTH-1..0]" (rect 144 81 258 94)(font "Arial" (font_size 8)))
+		(text "q[]" (rect 144 81 158 94)(font "Arial" (font_size 8)))
+		(line (pt 160 88)(pt 176 88)(line_width 3))
+	)
+	(parameter
+		"LPM_AVALUE"
+		""
+		"Unsigned value associated with the aset port"
+	)
+	(parameter
+		"LPM_FFTYPE"
+		""
+		"Selects behavior as DFF or TFF"
+		"\"DFF\"" "\"TFF\"" 
+	)
+	(parameter
+		"LPM_SVALUE"
+		""
+		"Unsigned value associated with the sset port"
+	)
+	(parameter
+		"LPM_WIDTH"
+		"1"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(drawing
+		(line (pt 16 16)(pt 160 16))
+		(line (pt 16 128)(pt 160 128))
+		(line (pt 160 128)(pt 160 16))
+		(line (pt 16 128)(pt 16 16))
+		(line (pt 16 80)(pt 24 88))
+		(line (pt 24 88)(pt 16 96))
+	)
+	(annotation_block (parameter)(rect -832 1280 -792 1304))
+)
+(symbol
+	(rect -1072 1392 -1040 1408)
+	(text "VCC" (rect 7 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst8" (rect 3 5 28 18)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 26 18)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 26 18)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect -480 -224 -272 -64)
+	(text "top" (rect 5 0 26 15)(font "Intel Clear" (font_size 8)))
+	(text "inst9" (rect 8 143 35 156)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "r0wen" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
+		(text "r0wen" (rect 21 27 59 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "r0din[15..0]" (rect 0 0 73 15)(font "Intel Clear" (font_size 8)))
+		(text "r0din[15..0]" (rect 21 43 94 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clock" (rect 0 0 33 15)(font "Intel Clear" (font_size 8)))
+		(text "clock" (rect 21 59 54 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "instr[15..0]" (rect 0 0 68 15)(font "Intel Clear" (font_size 8)))
+		(text "instr[15..0]" (rect 21 75 89 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "EXEC1" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
+		(text "EXEC1" (rect 21 91 58 106)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "EXEC2" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
+		(text "EXEC2" (rect 21 107 58 122)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "skipff" (rect 0 0 34 15)(font "Intel Clear" (font_size 8)))
+		(text "skipff" (rect 153 27 187 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 32)(pt 192 32))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "r0q[15..0]" (rect 0 0 61 15)(font "Intel Clear" (font_size 8)))
+		(text "r0q[15..0]" (rect 126 43 187 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 48)(pt 192 48)(line_width 3))
+	)
+	(port
+		(pt 208 64)
+		(output)
+		(text "testr1q[15..0]" (rect 0 0 84 15)(font "Intel Clear" (font_size 8)))
+		(text "testr1q[15..0]" (rect 103 59 187 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 64)(pt 192 64)(line_width 3))
+	)
+	(port
+		(pt 208 80)
+		(output)
+		(text "carryff" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
+		(text "carryff" (rect 150 75 187 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 80)(pt 192 80))
+	)
+	(port
+		(pt 208 96)
+		(output)
+		(text "testr2q[15..0]" (rect 0 0 84 15)(font "Intel Clear" (font_size 8)))
+		(text "testr2q[15..0]" (rect 103 91 187 106)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 96)(pt 192 96)(line_width 3))
+	)
+	(port
+		(pt 208 112)
+		(output)
+		(text "testr3q[15..0]" (rect 0 0 84 15)(font "Intel Clear" (font_size 8)))
+		(text "testr3q[15..0]" (rect 103 107 187 122)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 112)(pt 192 112)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 144))
+	)
 )
 (connector
 	(text "CLK" (rect 418 -456 438 -443)(font "Intel Clear" ))
@@ -1509,10 +1760,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 800 -328)
 	(pt 864 -328)
-)
-(connector
-	(pt 464 -272)
-	(pt 800 -272)
 )
 (connector
 	(pt 800 -272)
@@ -1773,12 +2020,6 @@ refer to the applicable agreement for further details.
 	(pt 1936 -272)
 )
 (connector
-	(text "ctrl_ram_write_enable" (rect 1984 -402 1997 -289)(font "Intel Clear" )(vertical))
-	(pt 2000 -272)
-	(pt 2000 -336)
-	(color 0 170 0)
-)
-(connector
 	(text "RAM_ADDRESS_IN[11..0]" (rect 1968 -411 1981 -288)(font "Intel Clear" )(vertical))
 	(pt 1984 -336)
 	(pt 1984 -272)
@@ -1799,15 +2040,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -632 728)
-	(pt -632 704)
-)
-(connector
-	(text "0" (rect -630 688 -625 701)(font "Intel Clear" ))
-	(pt -632 704)
-	(pt -592 704)
-)
-(connector
 	(text "k[15..0]" (rect 800 315 835 328)(font "Intel Clear" ))
 	(pt 792 112)
 	(pt 792 288)
@@ -1818,23 +2050,6 @@ refer to the applicable agreement for further details.
 	(pt -480 -144)
 	(pt -544 -144)
 	(bus)
-)
-(connector
-	(pt -376 -264)
-	(pt -496 -264)
-)
-(connector
-	(pt -496 -264)
-	(pt -496 -192)
-)
-(connector
-	(text "ctrl_enable_acc" (rect -568 -208 -492 -195)(font "Intel Clear" ))
-	(pt -480 -192)
-	(pt -496 -192)
-)
-(connector
-	(pt -496 -192)
-	(pt -544 -192)
 )
 (connector
 	(text "ctrl_shift" (rect -704 -127 -691 -80)(font "Intel Clear" )(vertical))
@@ -1926,6 +2141,102 @@ refer to the applicable agreement for further details.
 	(pt -272 -144)
 	(pt -216 -144)
 )
+(connector
+	(text "skipff" (rect -230 -208 -200 -195)(font "Intel Clear" ))
+	(pt -272 -192)
+	(pt -216 -192)
+)
+(connector
+	(pt 2000 -424)
+	(pt 1944 -424)
+)
+(connector
+	(text "<<__$DEF_ALIAS1134>>" (rect 1984 -402 1997 -274)(font "Intel Clear" )(vertical)(invisible))
+	(pt 2000 -272)
+	(pt 2000 -424)
+)
+(connector
+	(text "ctrl_ram_write_enable" (rect 1656 -424 1769 -411)(font "Intel Clear" ))
+	(pt 1776 -408)
+	(pt 1728 -408)
+)
+(connector
+	(text "skipff" (rect 1722 -440 1752 -427)(font "Intel Clear" ))
+	(pt 1776 -424)
+	(pt 1728 -424)
+)
+(connector
+	(pt -272 -160)
+	(pt -216 -160)
+	(bus)
+)
+(connector
+	(pt -272 -112)
+	(pt -216 -112)
+	(bus)
+)
+(connector
+	(pt -272 -128)
+	(pt -216 -128)
+	(bus)
+)
+(connector
+	(text "skipff" (rect -1038 1208 -1008 1221)(font "Intel Clear" ))
+	(pt -976 1224)
+	(pt -1040 1224)
+)
+(connector
+	(pt -768 736)
+	(pt -768 712)
+)
+(connector
+	(text "0" (rect -766 696 -761 709)(font "Intel Clear" ))
+	(pt -768 712)
+	(pt -728 712)
+)
+(connector
+	(text "ctrl_enable_acc" (rect -568 -208 -492 -195)(font "Intel Clear" ))
+	(pt -544 -192)
+	(pt -480 -192)
+)
+(connector
+	(pt -1008 1408)
+	(pt -1056 1408)
+)
+(connector
+	(text "CLK" (rect -1024 1376 -1004 1389)(font "Intel Clear" ))
+	(pt -1008 1392)
+	(pt -1024 1392)
+)
+(connector
+	(text "0" (rect -1054 1360 -1049 1373)(font "Intel Clear" ))
+	(pt -1008 1376)
+	(pt -1056 1376)
+)
+(connector
+	(text "skipff" (rect -86 -536 -56 -523)(font "Intel Clear" ))
+	(pt -96 -520)
+	(pt -8 -520)
+)
+(connector
+	(text "ctrl_pc_sload" (rect -86 -520 -18 -507)(font "Intel Clear" ))
+	(pt -8 -504)
+	(pt -96 -504)
+)
+(connector
+	(pt 160 -520)
+	(pt 448 -520)
+)
+(connector
+	(text "EXEC2" (rect -542 -128 -508 -115)(font "Intel Clear" ))
+	(pt -480 -112)
+	(pt -544 -112)
+)
+(connector
+	(text "EXEC2" (rect 474 -288 508 -275)(font "Intel Clear" ))
+	(pt 464 -272)
+	(pt 800 -272)
+)
 (junction (pt 592 552))
 (junction (pt 792 112))
 (junction (pt 736 -88))
@@ -1938,7 +2249,6 @@ refer to the applicable agreement for further details.
 (junction (pt 688 344))
 (junction (pt 832 -264))
 (junction (pt 976 -288))
-(junction (pt -496 -192))
 (junction (pt -632 456))
 (junction (pt -600 456))
 (text "CONROL PATH" (rect 152 -848 535 -789)(font "Bitstream Charter" (color 0 0 0)(font_size 36)))

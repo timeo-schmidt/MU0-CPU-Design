@@ -1,4 +1,4 @@
-module alu ( instruction, rddata, rsdata, carrystatus, skipstatus, exec1,
+module alu ( instruction, rddata, rsdata, carrystatus, skipstatus, exec1, exec2,
     aluout, carryout, skipout, carryen, skipen, wenout) ;
 
 // v1.01
@@ -9,6 +9,7 @@ input [15:0] rddata;  // Rd register data outputs
 input [15:0] rsdata;  // Rs register data outputs
 input carrystatus;    // the Q output from CARRY
 input skipstatus;     // the Q output from SKIP
+input exec2;
 
 output [15:0] aluout; // the ALU block output, written into Rd
 output carryout;       // the CARRY out, D for CARRY flip flinstruction
@@ -27,7 +28,7 @@ wire [1:0] cininstr = instruction [13:12];  // CIN field from IR'
 wire [1:0] code = instruction [15:14];     // bits from IR': must be 11 for ARM instruction
 
 //our wire
-wire LDA, STA, ADD, SUB, JMP, JMI, JEQ, STP, LDI, LSL, LSR, EQ, MI;
+wire LDA, STA, ADD, SUB, JMP, JMI, JEQ, STP, LDI, LSL, LSR, EQ, MI, skipcondition, MU0;
 
 reg [16:0] alusum; // the 17 bit sum, 1 extra bit so ALU carry out can be extracted
 wire cin; // The ALU carry input, determined from instruction as in ISA spec
@@ -51,25 +52,28 @@ assign STP = ~instruction[15]&instruction[14]&instruction[13]&instruction[12];		
 assign LDI = instruction[15]&~instruction[14]&~instruction[13]&~instruction[12];		// LDI 1000 8 
 assign LSL = instruction[15]&~instruction[14]&~instruction[13]&instruction[12];		// LSL 1001 9
 assign LSR = instruction[15]&~instruction[14]&instruction[13]&~instruction[12];		// LSR 1010 A
+assign skipcondition = ~instruction[11]&~instruction[10]&~instruction[9]&instruction[8] | carrystatus&~instruction[11]&~instruction[10]&instruction[9]&~instruction[8] |  ~carrystatus&~instruction[11]&~instruction[10]&instruction[9]&instruction[8];
+assign MU0 = LDA|STA|ADD|SUB|JMP|JEQ|JMI|STP|LDI|LSL|LSR;
 //assign EQ = ~ACC_OUT[15]&~ACC_OUT[14]&~ACC_OUT[13]&~ACC_OUT[12]&~ACC_OUT[11]&~ACC_OUT[10]&~ACC_OUT[9]&~ACC_OUT[8]&~ACC_OUT[7]&~ACC_OUT[6]&~ACC_OUT[5]&~ACC_OUT[4]&~ACC_OUT[3]&~ACC_OUT[2]&~ACC_OUT[1]&~ACC_OUT[0];
 //assign MI = ACC_OUT[15];
 
 
 // change as needed
-assign wenout = exec1&~(LDA|STA|ADD|SUB|JMP|JEQ|JMI|STP|LDI|LSL|LSR);  // correct timing, to do: add enable condition
+assign wenout = exec1&~MU0;  // correct timing, to do: add enable condition
 
-assign carryen = exec1&cwinstr; // correct timing, to do: add enable condition
-assign carryout = alucout | rsdata[0]&instruction[4]&instruction[5]&~instruction[6]; // this is correct except for XSR
+
+assign carryen = exec1&cwinstr&~MU0; // correct timing, to do: add enable condition
+assign carryout = (alucout | rsdata[0]&instruction[4]&instruction[5]&~instruction[6]) & ~MU0; // this is correct except for XSR
                            // note the special case of rsdata[0] when instruction=011 (XSR)
-assign cin = instruction[15]&instruction[14]&~instruction[13]&instruction[12] | carrystatus&instruction[15]&instruction[14]&instruction[13]&~instruction[12] | 
- rsdata[15]&instruction[15]&instruction[14]&instruction[13]&instruction[12];         
+assign cin = (instruction[15]&instruction[14]&~instruction[13]&instruction[12] | carrystatus&instruction[15]&instruction[14]&instruction[13]&~instruction[12] | 
+ rsdata[15]&instruction[15]&instruction[14]&instruction[13]&instruction[12])&~MU0;         
 
 
 // dummy, to do: replace with correct logic
-assign shiftin = cin&instruction[4]&instruction[5]&~instruction[6];     // dummy, to do: set equal to cin for correct XSR functionality
+assign shiftin = (cin&instruction[4]&instruction[5]&~instruction[6])&~MU0;     // dummy, to do: set equal to cin for correct XSR functionality
 
-assign skipout = 0;     // dummy, to do: replace with correct logic
-assign skipen = exec1;  // correct timing, to do: add enable condition
+assign skipout = (skipcondition&~skipstatus)&~MU0;     // dummy, to do: replace with correct logic
+assign skipen = exec1&skipcondition&~skipstatus&~MU0 | skipstatus&(LDA | ADD | SUB)&exec2 | skipstatus&~(LDA | ADD | SUB)&exec1;  // correct timing, to do: add enable condition
 
 always @(*) // do not change this line - it makes sure we have combinational logic
   begin

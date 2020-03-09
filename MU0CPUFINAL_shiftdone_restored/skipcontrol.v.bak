@@ -1,0 +1,12 @@
+module skip_ctrl
+
+(
+input skip,
+input signal,
+output skip_control
+
+);
+
+assign skip_cntrol = ~skip & signal;
+
+endmodule
